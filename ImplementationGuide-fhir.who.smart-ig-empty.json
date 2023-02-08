@@ -3,9 +3,9 @@
   "id" : "fhir.who.smart-ig-empty",
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>smartigempty</h2><p>The official URL for this implementation guide is: </p><pre>http://worldhealthorganization.github.io/smart-ig-empty/ImplementationGuide/fhir.who.smart-ig-empty</pre><div><p>SMART Guidlines Implemenation Guide Template</p>\n</div></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>smartigempty</h2><p>The official URL for this implementation guide is: </p><pre>http://ritikarawlani.github.io/smart-outbreak-measles/ImplementationGuide/fhir.who.smart-ig-empty</pre><div><p>SMART Guidlines Implemenation Guide Template</p>\n</div></div>"
   },
-  "url" : "http://worldhealthorganization.github.io/smart-ig-empty/ImplementationGuide/fhir.who.smart-ig-empty",
+  "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/ImplementationGuide/fhir.who.smart-ig-empty",
   "version" : "0.2.1",
   "name" : "smartigempty",
   "title" : "WHO SMART Guideline: IG Template",
@@ -146,7 +146,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "http://worldhealthorganization.github.io/smart-ig-empty/history.html"
+        "valueString" : "http://ritikarawlani.github.io/smart-outbreak-measles/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -410,7 +410,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "http://worldhealthorganization.github.io/smart-ig-empty/history.html"
+        "valueString" : "http://ritikarawlani.github.io/smart-outbreak-measles/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
