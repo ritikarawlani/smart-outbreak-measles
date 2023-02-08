@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://worldhealthorganization.github.io/smart-ig-empty/ImplementationGuide/fhir.who.smart-ig-empty> a fhir:ImplementationGuide;
+<http://ritikarawlani.github.io/smart-outbreak-measles/ImplementationGuide/fhir.who.smart-ig-empty> a fhir:ImplementationGuide;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "fhir.who.smart-ig-empty"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>smartigempty</h2><p>The official URL for this implementation guide is: </p><pre>http://worldhealthorganization.github.io/smart-ig-empty/ImplementationGuide/fhir.who.smart-ig-empty</pre><div><p>SMART Guidlines Implemenation Guide Template</p>\n</div></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>smartigempty</h2><p>The official URL for this implementation guide is: </p><pre>http://ritikarawlani.github.io/smart-outbreak-measles/ImplementationGuide/fhir.who.smart-ig-empty</pre><div><p>SMART Guidlines Implemenation Guide Template</p>\n</div></div>"
   ]; # 
-  fhir:ImplementationGuide.url [ fhir:value "http://worldhealthorganization.github.io/smart-ig-empty/ImplementationGuide/fhir.who.smart-ig-empty"]; # 
+  fhir:ImplementationGuide.url [ fhir:value "http://ritikarawlani.github.io/smart-outbreak-measles/ImplementationGuide/fhir.who.smart-ig-empty"]; # 
   fhir:ImplementationGuide.version [ fhir:value "0.2.1"]; # 
   fhir:ImplementationGuide.name [ fhir:value "smartigempty"]; # 
   fhir:ImplementationGuide.title [ fhir:value "WHO SMART Guideline: IG Template"]; # 
@@ -176,7 +176,7 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "http://worldhealthorganization.github.io/smart-ig-empty/history.html" ]
+         fhir:Extension.valueString [ fhir:value "http://ritikarawlani.github.io/smart-outbreak-measles/history.html" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -464,7 +464,7 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "http://worldhealthorganization.github.io/smart-ig-empty/history.html" ]
+         fhir:Extension.valueString [ fhir:value "http://ritikarawlani.github.io/smart-outbreak-measles/history.html" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -644,7 +644,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:logical:abstract" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-empty/StructureDefinition/OutbreakToolkitMeaslesDemographic>;
+         fhir:link <http://ritikarawlani.github.io/smart-outbreak-measles/StructureDefinition/OutbreakToolkitMeaslesDemographic>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/OutbreakToolkitMeaslesDemographic" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Logical Model for Outbreak Toolkit Measles- Demographics" ];
@@ -1076,7 +1076,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://worldhealthorganization.github.io/smart-ig-empty/ImplementationGuide/fhir.who.smart-ig-empty.ttl> a owl:Ontology;
+<http://ritikarawlani.github.io/smart-outbreak-measles/ImplementationGuide/fhir.who.smart-ig-empty.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

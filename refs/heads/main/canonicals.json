@@ -1,16 +1,16 @@
 [
   {
+    "id" : "fhir.who.smart-ig-empty",
+    "type" : "ImplementationGuide",
+    "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/ImplementationGuide/fhir.who.smart-ig-empty",
+    "version" : "0.2.1",
+    "name" : "smartigempty"
+  },
+  {
     "id" : "OutbreakToolkitMeaslesDemographic",
     "type" : "StructureDefinition",
     "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/StructureDefinition/OutbreakToolkitMeaslesDemographic",
     "version" : "0.2.1",
     "name" : "OutbreakToolkitMeaslesDemographic"
-  },
-  {
-    "id" : "fhir.who.smart-ig-empty",
-    "type" : "ImplementationGuide",
-    "url" : "http://worldhealthorganization.github.io/smart-ig-empty/ImplementationGuide/fhir.who.smart-ig-empty",
-    "version" : "0.2.1",
-    "name" : "smartigempty"
   }
 ]

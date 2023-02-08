@@ -3,10 +3,10 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="fhir.who.smart-ig-empty"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>smartigempty</h2><p>The official URL for this implementation guide is: </p><pre>http://worldhealthorganization.github.io/smart-ig-empty/ImplementationGuide/fhir.who.smart-ig-empty</pre><div><p>SMART Guidlines Implemenation Guide Template</p>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>smartigempty</h2><p>The official URL for this implementation guide is: </p><pre>http://ritikarawlani.github.io/smart-outbreak-measles/ImplementationGuide/fhir.who.smart-ig-empty</pre><div><p>SMART Guidlines Implemenation Guide Template</p>
 </div></div>
   </text>
-  <url value="http://worldhealthorganization.github.io/smart-ig-empty/ImplementationGuide/fhir.who.smart-ig-empty"/>
+  <url value="http://ritikarawlani.github.io/smart-outbreak-measles/ImplementationGuide/fhir.who.smart-ig-empty"/>
   <version value="0.2.1"/>
   <name value="smartigempty"/>
   <title value="WHO SMART Guideline: IG Template"/>
@@ -116,7 +116,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="http://worldhealthorganization.github.io/smart-ig-empty/history.html"/>
+        <valueString value="http://ritikarawlani.github.io/smart-outbreak-measles/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -308,7 +308,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="http://worldhealthorganization.github.io/smart-ig-empty/history.html"/>
+        <valueString value="http://ritikarawlani.github.io/smart-outbreak-measles/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
