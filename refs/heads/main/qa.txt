@@ -1,11 +1,11 @@
-﻿smartigempty : Validation Results
+﻿smartoutbreakmeasles : Validation Results
 =========================================
 
 err = 1, warn = 5, info = 0
 IG Publisher Version: 1.2.35
-Generated Wed Feb 08 11:45:32 UTC 2023. FHIR version 4.0.1 for fhir.who.smart-ig-empty#0.2.1 (canonical = http://ritikarawlani.github.io/smart-outbreak-measles)
+Generated Thu Feb 09 07:29:46 UTC 2023. FHIR version 4.0.1 for fhir.ritikarawlani.smart-outbreak-measles#0.2.1 (canonical = http://ritikarawlani.github.io/smart-outbreak-measles)
  Build Errors : 50 / 4 / 0
- /github/workspace/fsh-generated/resources/ImplementationGuide-fhir.who.smart-ig-empty : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ImplementationGuide-fhir.ritikarawlani.smart-outbreak-measles : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-OutbreakToolkitMeaslesDemographic : 1 / 0 / 1
 </table>
 == n/a ==
@@ -63,7 +63,7 @@ ERROR: /github/workspace/output/workflows.html#/html/body/div/div/nav/div/div/ul
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
-== fsh-generated/resources/ImplementationGuide-fhir.who.smart-ig-empty.json ==
-WARNING: ImplementationGuide/fhir.who.smart-ig-empty: ImplementationGuide: Rule ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated/resources/ImplementationGuide-fhir.ritikarawlani.smart-outbreak-measles.json ==
+WARNING: ImplementationGuide/fhir.ritikarawlani.smart-outbreak-measles: ImplementationGuide: Rule ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated/resources/StructureDefinition-OutbreakToolkitMeaslesDemographic.json ==
 ERROR: StructureDefinition/OutbreakToolkitMeaslesDemographic: StructureDefinition: The kind logical must be the same as the kind resource in the base structure http://hl7.org/fhir/StructureDefinition/Patient (base type = Patient)

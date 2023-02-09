@@ -1,9 +1,9 @@
 {
-  "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/ImplementationGuide/fhir.who.smart-ig-empty",
-  "name" : "smartigempty",
-  "package-id" : "fhir.who.smart-ig-empty",
+  "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/ImplementationGuide/fhir.ritikarawlani.smart-outbreak-measles",
+  "name" : "smartoutbreakmeasles",
+  "package-id" : "fhir.ritikarawlani.smart-outbreak-measles",
   "ig-ver" : "0.2.1",
-  "date" : "Wed, 08 Feb, 2023 11:45:18 +0000",
+  "date" : "Thu, 09 Feb, 2023 07:29:24 +0000",
   "errs" : 1,
   "warnings" : 5,
   "hints" : 0,
