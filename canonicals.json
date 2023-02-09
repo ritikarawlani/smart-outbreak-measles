@@ -1,10 +1,10 @@
 [
   {
-    "id" : "fhir.who.smart-ig-empty",
+    "id" : "fhir.ritikarawlani.smart-outbreak-measles",
     "type" : "ImplementationGuide",
-    "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/ImplementationGuide/fhir.who.smart-ig-empty",
+    "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/ImplementationGuide/fhir.ritikarawlani.smart-outbreak-measles",
     "version" : "0.2.1",
-    "name" : "smartigempty"
+    "name" : "smartoutbreakmeasles"
   },
   {
     "id" : "OutbreakToolkitMeaslesDemographic",
