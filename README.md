@@ -7,7 +7,7 @@ This is the SMART Guidelines Starter Template
 This ImplementationGuide is published in the following locations:
 
 
-Continuous Build:  __https://github.com/WorldHealthOrganization/smart-ig-starter-kit__  
+Continuous Build:  __https://github.com/ritikarawlani/smart-outbreak-measles/branches/quest-template__  
 Canonical / permanent URL: __https://WorldHealthOrganization.github.io/smart-ig-starter-kit__  
 
 <br> </br>
