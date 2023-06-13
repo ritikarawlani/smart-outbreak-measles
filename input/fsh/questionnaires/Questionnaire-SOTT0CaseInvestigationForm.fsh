@@ -126,6 +126,17 @@ Usage: #definition
       * insert Question(RespiratoryRate,Respiratory rate - per min ,quantity, false)
       * insert Question(O2Sat,O2 saturation room air,quantity, false)
       * insert Question(temperature,Temperature - degrees:,quantity, false)
+// Adding units to a question
+      * item[=]
+// Option 1: unitOption extension
+        * extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption"
+        * extension[=].valueCoding = http://unitsofmeasure.org#Cel
+        * extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption"
+        * extension[=].valueCoding = http://unitsofmeasure.org#[degF]
+// Option 2: unitValueSet extension (not supported in LHCForms)
+        // * extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-unitValueSet"
+        // * extension[=].valueCanonical = Canonical(RouteOfAdministration)
+
       * insert Question(crt,Capillary refill time> 3 sec,choice, false)
       * insert Question(muac,MUAC - cm:,quantity, false)
     * insert Question(comorbidity, Underlying conditions and comorbidity - check all that apply, display, false)
