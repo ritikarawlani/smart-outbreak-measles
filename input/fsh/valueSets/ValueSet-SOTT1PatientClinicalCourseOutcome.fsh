@@ -6,9 +6,9 @@ Title:	       "Patient Clinical Course Outcome"
 Description:   "Patient Clinical Course Outcome"
 * ^status = #draft
 * codes from system PatientOutcomeCs
-// * ^expansion.identifier = "urn:uuid:c060c134-871f-43be-b1ee-5dfface2c18f"
-// * ^expansion.timestamp = "2023-05-02T20:23:35+05:30"
-// * ^expansion.total = 5
+//* ^expansion.identifier = "urn:uuid:c060c134-871f-43be-b1ee-5dfface2c18f"
+//* ^expansion.timestamp = "2023-05-02T20:23:35+05:30"
+//* ^expansion.total = 5
 // * ^expansion.parameter[0].name = "excludeNested"
 // * ^expansion.parameter[=].valueBoolean = false
 // * ^expansion.parameter[+].name = "version"

@@ -19,18 +19,19 @@ Usage: #definition
 * language = #en
 * status = #draft
 * contained[+] = BiologicalSex
+* contained[+] = PatientOutcome
 
 //Header
-* insert Question(investigationForm,T0 Initial Case Investigation Form,display,false)
+* insert Question(investigationForm,T0 Initial Case Investigation Form,group,false)
   //Demographics
 * item[=]
-  * insert Question(Demographics, Section 1: Patient Information, display, false)
+  * insert Question(Demographics, Section 1: Patient Information, group, false)
   * item[=]
     * insert Question(Name, Name, string, false)
     * insert Question(identification,Identification, string,false)
     * insert Question (telephone, Telephone, string, false)
     * insert Question(BirthDate, Birth Date, date, false)
-    * insert Question(Sex, Sex at birth,choice,false)
+    * insert Question(Sex, Sex at birth (male/female\),choice,false)
     * item[=].answerValueSet = Canonical(BiologicalSex)
     * insert Question(estimatedAge, Estimated Age in years/months/days, string, false)
     * insert Question(occupation,Occupation,string,false)
@@ -44,7 +45,7 @@ Usage: #definition
     * insert Question(longitude, GPS residence longitude, string, false)
   //Clinical Information
   * item[=]
-  * insert Question(Clinical, Section 2: Clinical Information, display, false)
+  * insert Question(Clinical, Section 2: Clinical Information, group, false)
     * item[=]
       * insert Question(clinicalCourse, Patient clinical course, group, false)
       * insert Question(symptomOnsetDate,	date of onset of symptoms*:____/____/______	,date, false)
@@ -130,7 +131,45 @@ Usage: #definition
     * insert Question(comorbidity, Underlying conditions and comorbidity - check all that apply, display, false)
   //Exposure
   * item[=]
-  * insert Question(Exposure, Section 3: Exposure and travel Information 3 WEEKS PRIOR TO FIRST SYMPTOM ONSET, display, false)
+  * insert Question(Exposure, Section 3: Exposure and travel Information 3 WEEKS PRIOR TO FIRST SYMPTOM ONSET, group, false)
+    * item[=]
+    * insert Question(fever,History of fever,choice,false)
+    * item[=].answerValueSet = "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/YesNoUnknown"
+    * insert Question(fatigue,Intense fatigue or weakness,choice,false)
+    * item[=].answerValueSet = "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/YesNoUnknown"
+    * insert Question(irritability,Irritability/confusion,choice,false)
+    * item[=].answerValueSet = "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/YesNoUnknown"      
+    * insert Question(headache,Head pain,choice,false)
+    * item[=].answerValueSet = "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/YesNoUnknown"      
+    * insert Question(soreThroat,Sore throat,choice,false)
+    * item[=].answerValueSet = "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/YesNoUnknown"     
+    * insert Question(intenseCough,Non-productive cough,choice,false)
+    * item[=].answerValueSet = "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/YesNoUnknown"      
+    * insert Question(expectoration,Productive cough - expectoration,choice,false)
+    * item[=].answerValueSet = "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/YesNoUnknown"      
+    * insert Question(anorexia,Loss of appetite,choice,false)
+    * item[=].answerValueSet = "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/YesNoUnknown"      
+    * insert Question(diarrhoea,Passing rice water-like stool,choice,false)
+    * item[=].answerValueSet = "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/YesNoUnknown"      
+    * insert Question(nausea,Nausea/vomiting,choice,false)
+    * item[=].answerValueSet = "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/YesNoUnknown"      
+    * insert Question(intensePain,Intense pain,choice,false)
+    * item[=].answerValueSet = "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/YesNoUnknown"      
+    * insert Question(musclePain,Muscular pain,choice,false)
+    * item[=].answerValueSet = "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/YesNoUnknown"
+    * item[=]
+      * enableWhen
+        * question = "intensePain"
+        * operator = #=
+        * answerCoding 
+          * system = "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/YesNoUnknown"
+          * code =  #Yes    
+    * insert Question(chestPain,Chest pain,choice,false)
+    * item[=].answerValueSet = "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/YesNoUnknown"      
+    * insert Question(abdominalPain,Abdominal pain,choice,false)
+    * item[=].answerValueSet = "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/YesNoUnknown"      
+    * insert Question(jointPain,Joint pain,choice,false)
+    * item[=].answerValueSet = "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/YesNoUnknown"
   //Laboratory Information
   * item[=]
   * insert Question(Laboratory, Section 4: Laboratory Information, display, false)
