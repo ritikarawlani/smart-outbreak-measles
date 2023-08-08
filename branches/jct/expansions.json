@@ -1,0 +1,1146 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "bf87a59a-3e39-45ce-ba30-65ef78d12172",
+  "meta" : {
+    "lastUpdated" : "2023-06-13T18:28:07.819+00:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/AnimalContactType",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-AnimalContactTypeCs.html\">Animal Contact Type v0.2.1 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-AnimalContactType-Trading\"> </a>\u00a0\u00a0<a href=\"CodeSystem-AnimalContactTypeCs.html#AnimalContactTypeCs-Trading\">Trading</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/AnimalContactType</td><td>trading</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-AnimalContactType-Slaughtered\"> </a>\u00a0\u00a0<a href=\"CodeSystem-AnimalContactTypeCs.html#AnimalContactTypeCs-Slaughtered\">Slaughtered</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/AnimalContactType</td><td>slaughtered/butchered</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-AnimalContactType-Handling\"> </a>\u00a0\u00a0<a href=\"CodeSystem-AnimalContactTypeCs.html#AnimalContactTypeCs-Handling\">Handling</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/AnimalContactType</td><td>Handling</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-AnimalContactType-Consumption\"> </a>\u00a0\u00a0<a href=\"CodeSystem-AnimalContactTypeCs.html#AnimalContactTypeCs-Consumption\">Consumption</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/AnimalContactType</td><td>consmption of Animal Products</td></tr></table></div>"
+      },
+      "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/AnimalContactType",
+      "version" : "0.2.1",
+      "name" : "AnimalContactType",
+      "title" : "Animal Contact Type",
+      "status" : "draft",
+      "date" : "2023-06-13T18:28:07+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:f917ebe6-f054-423e-8475-d46eb8802df6",
+        "timestamp" : "2023-06-13T18:28:44+00:00",
+        "total" : 4,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://ritikarawlani.github.io/smart-outbreak-measles/AnimalContactType|0.2.1"
+        }],
+        "contains" : [{
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/AnimalContactType",
+          "code" : "Trading",
+          "display" : "trading"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/AnimalContactType",
+          "code" : "Slaughtered",
+          "display" : "slaughtered/butchered"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/AnimalContactType",
+          "code" : "Handling",
+          "display" : "Handling"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/AnimalContactType",
+          "code" : "Consumption",
+          "display" : "consmption of Animal Products"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/BiologicalSex",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"http://hl7.org/fhir/R4/codesystem-administrative-gender.html\">AdministrativeGender v4.0.1 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-administrative-gender-male\"> </a>\u00a0\u00a0<a href=\"http://hl7.org/fhir/R4/codesystem-administrative-gender.html#administrative-gender-male\">male</a></td><td>http://hl7.org/fhir/administrative-gender</td><td>Male</td><td><div><p>Male.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-administrative-gender-female\"> </a>\u00a0\u00a0<a href=\"http://hl7.org/fhir/R4/codesystem-administrative-gender.html#administrative-gender-female\">female</a></td><td>http://hl7.org/fhir/administrative-gender</td><td>Female</td><td><div><p>Female.</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/BiologicalSex",
+      "version" : "0.2.1",
+      "name" : "BiologicalSex",
+      "title" : "SOT Biological Sex",
+      "status" : "draft",
+      "date" : "2023-06-13T18:28:07+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:2d81ede8-99a6-4e33-a930-63a16d92a53f",
+        "timestamp" : "2023-06-13T18:28:44+00:00",
+        "total" : 2,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://hl7.org/fhir/administrative-gender|4.0.1"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.org/fhir/administrative-gender",
+          "code" : "male",
+          "display" : "Male"
+        },
+        {
+          "system" : "http://hl7.org/fhir/administrative-gender",
+          "code" : "female",
+          "display" : "Female"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/WaterCharacteristics",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-WaterCharacteristicsCs.html\">Water Characteristics v0.2.1 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-WaterCharacteristics-Clear\"> </a>\u00a0\u00a0<a href=\"CodeSystem-WaterCharacteristicsCs.html#WaterCharacteristicsCs-Clear\">Clear</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/WaterCharacteristics</td><td>Clear</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-WaterCharacteristics-Filtered\"> </a>\u00a0\u00a0<a href=\"CodeSystem-WaterCharacteristicsCs.html#WaterCharacteristicsCs-Filtered\">Filtered</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/WaterCharacteristics</td><td>Filtered</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-WaterCharacteristics-Treated\"> </a>\u00a0\u00a0<a href=\"CodeSystem-WaterCharacteristicsCs.html#WaterCharacteristicsCs-Treated\">Treated</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/WaterCharacteristics</td><td>Treated</td></tr></table></div>"
+      },
+      "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/WaterCharacteristics",
+      "version" : "0.2.1",
+      "name" : "WaterCharacteristics",
+      "title" : "Water Characteristics",
+      "status" : "draft",
+      "date" : "2023-06-13T18:28:07+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:04111779-0eff-4b42-bc14-3383755003b9",
+        "timestamp" : "2023-06-13T18:28:46+00:00",
+        "total" : 3,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://ritikarawlani.github.io/smart-outbreak-measles/WaterCharacteristics|0.2.1"
+        }],
+        "contains" : [{
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/WaterCharacteristics",
+          "code" : "Clear",
+          "display" : "Clear"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/WaterCharacteristics",
+          "code" : "Filtered",
+          "display" : "Filtered"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/WaterCharacteristics",
+          "code" : "Treated",
+          "display" : "Treated"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/PatientOutcome",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 5 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-PatientOutcomeCs.html\">Patient Clinical Course Outcome v0.2.1 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-PatientOutcome-Sick\"> </a>\u00a0\u00a0<a href=\"CodeSystem-PatientOutcomeCs.html#PatientOutcomeCs-Sick\">Sick</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/PatientOutcome</td><td>Still sick</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-PatientOutcome-Cured\"> </a>\u00a0\u00a0<a href=\"CodeSystem-PatientOutcomeCs.html#PatientOutcomeCs-Cured\">Cured</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/PatientOutcome</td><td>Cured</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-PatientOutcome-Sequelae\"> </a>\u00a0\u00a0<a href=\"CodeSystem-PatientOutcomeCs.html#PatientOutcomeCs-Sequelae\">Sequelae</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/PatientOutcome</td><td>Sequelae</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-PatientOutcome-Defaulter\"> </a>\u00a0\u00a0<a href=\"CodeSystem-PatientOutcomeCs.html#PatientOutcomeCs-Defaulter\">Defaulter</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/PatientOutcome</td><td>Defaulter</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-PatientOutcome-Death\"> </a>\u00a0\u00a0<a href=\"CodeSystem-PatientOutcomeCs.html#PatientOutcomeCs-Death\">Death</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/PatientOutcome</td><td>Death</td></tr></table></div>"
+      },
+      "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/PatientOutcome",
+      "version" : "0.2.1",
+      "name" : "PatientOutcome",
+      "title" : "Patient Clinical Course Outcome",
+      "status" : "draft",
+      "date" : "2023-06-13T18:28:07+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:02a18a13-8126-4fe1-8e21-a86af66e91ee",
+        "timestamp" : "2023-06-13T18:28:46+00:00",
+        "total" : 5,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://ritikarawlani.github.io/smart-outbreak-measles/PatientOutcome|0.2.1"
+        }],
+        "contains" : [{
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/PatientOutcome",
+          "code" : "Sick",
+          "display" : "Still sick"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/PatientOutcome",
+          "code" : "Cured",
+          "display" : "Cured"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/PatientOutcome",
+          "code" : "Sequelae",
+          "display" : "Sequelae"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/PatientOutcome",
+          "code" : "Defaulter",
+          "display" : "Defaulter"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/PatientOutcome",
+          "code" : "Death",
+          "display" : "Death"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/ProvType",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 8 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-ProvTypeCs.html\">Type of Provider Code System v0.2.1 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-ProvType-1\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ProvTypeCs.html#ProvTypeCs-1\">1</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/ProvType</td><td>Spontaneous Consultation</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-ProvType-2\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ProvTypeCs.html#ProvTypeCs-2\">2</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/ProvType</td><td>Laboratory</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-ProvType-3\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ProvTypeCs.html#ProvTypeCs-3\">3</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/ProvType</td><td>Institutional Search</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-ProvType-4\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ProvTypeCs.html#ProvTypeCs-4\">4</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/ProvType</td><td>Community Case Search</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-ProvType-5\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ProvTypeCs.html#ProvTypeCs-5\">5</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/ProvType</td><td>Contact Investigation</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-ProvType-6\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ProvTypeCs.html#ProvTypeCs-6\">6</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/ProvType</td><td>Community Report</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-ProvType-88\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ProvTypeCs.html#ProvTypeCs-88\">88</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/ProvType</td><td>Other</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-ProvType-99\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ProvTypeCs.html#ProvTypeCs-99\">99</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/ProvType</td><td>Unknown</td></tr></table></div>"
+      },
+      "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/ProvType",
+      "version" : "0.2.1",
+      "name" : "ProvType",
+      "title" : "SOT Measles Provider Type",
+      "status" : "draft",
+      "date" : "2023-06-13T18:28:07+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:11a7461b-56ae-4c84-befb-b8a797f0fa61",
+        "timestamp" : "2023-06-13T18:28:48+00:00",
+        "total" : 8,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://ritikarawlani.github.io/smart-outbreak-measles/ProvType|0.2.1"
+        }],
+        "contains" : [{
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/ProvType",
+          "code" : "1",
+          "display" : "Spontaneous Consultation"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/ProvType",
+          "code" : "2",
+          "display" : "Laboratory"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/ProvType",
+          "code" : "3",
+          "display" : "Institutional Search"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/ProvType",
+          "code" : "4",
+          "display" : "Community Case Search"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/ProvType",
+          "code" : "5",
+          "display" : "Contact Investigation"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/ProvType",
+          "code" : "6",
+          "display" : "Community Report"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/ProvType",
+          "code" : "88",
+          "display" : "Other"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/ProvType",
+          "code" : "99",
+          "display" : "Unknown"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/LocType",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 8 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-LocTypeCs.html\">Locality Type Code System v0.2.1 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-LocType-1\"> </a>\u00a0\u00a0<a href=\"CodeSystem-LocTypeCs.html#LocTypeCs-1\">1</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/LocType</td><td>Spontaneous Consultation</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-LocType-2\"> </a>\u00a0\u00a0<a href=\"CodeSystem-LocTypeCs.html#LocTypeCs-2\">2</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/LocType</td><td>Laboratory</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-LocType-3\"> </a>\u00a0\u00a0<a href=\"CodeSystem-LocTypeCs.html#LocTypeCs-3\">3</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/LocType</td><td>Institutional Search</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-LocType-4\"> </a>\u00a0\u00a0<a href=\"CodeSystem-LocTypeCs.html#LocTypeCs-4\">4</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/LocType</td><td>Community Case Search</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-LocType-5\"> </a>\u00a0\u00a0<a href=\"CodeSystem-LocTypeCs.html#LocTypeCs-5\">5</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/LocType</td><td>Contact Investigation</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-LocType-6\"> </a>\u00a0\u00a0<a href=\"CodeSystem-LocTypeCs.html#LocTypeCs-6\">6</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/LocType</td><td>Community Report</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-LocType-88\"> </a>\u00a0\u00a0<a href=\"CodeSystem-LocTypeCs.html#LocTypeCs-88\">88</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/LocType</td><td>Other</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-LocType-99\"> </a>\u00a0\u00a0<a href=\"CodeSystem-LocTypeCs.html#LocTypeCs-99\">99</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/LocType</td><td>Unknown</td></tr></table></div>"
+      },
+      "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/LocType",
+      "version" : "0.2.1",
+      "name" : "LocType",
+      "title" : "SOT Measles Locality Type",
+      "status" : "draft",
+      "date" : "2023-06-13T18:28:07+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:74c3c149-e5db-43fa-bdf9-248aaa9502a1",
+        "timestamp" : "2023-06-13T18:28:49+00:00",
+        "total" : 8,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://ritikarawlani.github.io/smart-outbreak-measles/LocType|0.2.1"
+        }],
+        "contains" : [{
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/LocType",
+          "code" : "1",
+          "display" : "Spontaneous Consultation"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/LocType",
+          "code" : "2",
+          "display" : "Laboratory"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/LocType",
+          "code" : "3",
+          "display" : "Institutional Search"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/LocType",
+          "code" : "4",
+          "display" : "Community Case Search"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/LocType",
+          "code" : "5",
+          "display" : "Contact Investigation"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/LocType",
+          "code" : "6",
+          "display" : "Community Report"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/LocType",
+          "code" : "88",
+          "display" : "Other"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/LocType",
+          "code" : "99",
+          "display" : "Unknown"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/DomesticatedWild",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-DomesticatedWildCs.html\">Domesticated or Wild v0.2.1 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-DomesticatedWild-Domestic\"> </a>\u00a0\u00a0<a href=\"CodeSystem-DomesticatedWildCs.html#DomesticatedWildCs-Domestic\">Domestic</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/DomesticatedWild</td><td>Domestic</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-DomesticatedWild-Wild\"> </a>\u00a0\u00a0<a href=\"CodeSystem-DomesticatedWildCs.html#DomesticatedWildCs-Wild\">Wild</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/DomesticatedWild</td><td>Wild</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-DomesticatedWild-Pest\"> </a>\u00a0\u00a0<a href=\"CodeSystem-DomesticatedWildCs.html#DomesticatedWildCs-Pest\">Pest</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/DomesticatedWild</td><td>Pest</td></tr></table></div>"
+      },
+      "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/DomesticatedWild",
+      "version" : "0.2.1",
+      "name" : "DomesticatedWild",
+      "title" : "Domesticated or Wild",
+      "status" : "draft",
+      "date" : "2023-06-13T18:28:07+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:b7c118a0-7518-43b7-b7b8-4d6c436c5873",
+        "timestamp" : "2023-06-13T18:28:49+00:00",
+        "total" : 3,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://ritikarawlani.github.io/smart-outbreak-measles/DomesticatedWild|0.2.1"
+        }],
+        "contains" : [{
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/DomesticatedWild",
+          "code" : "Domestic",
+          "display" : "Domestic"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/DomesticatedWild",
+          "code" : "Wild",
+          "display" : "Wild"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/DomesticatedWild",
+          "code" : "Pest",
+          "display" : "Pest"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/YesNoUnknown",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-YesNoUnknownCs.html\">Yes No Unknown v0.2.1 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-YesNoUnknown-Yes\"> </a>\u00a0\u00a0<a href=\"CodeSystem-YesNoUnknownCs.html#YesNoUnknownCs-Yes\">Yes</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/YesNoUnknown</td><td>Yes</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-YesNoUnknown-No\"> </a>\u00a0\u00a0<a href=\"CodeSystem-YesNoUnknownCs.html#YesNoUnknownCs-No\">No</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/YesNoUnknown</td><td>No</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-YesNoUnknown-Unknown\"> </a>\u00a0\u00a0<a href=\"CodeSystem-YesNoUnknownCs.html#YesNoUnknownCs-Unknown\">Unknown</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/YesNoUnknown</td><td>Unknown</td></tr></table></div>"
+      },
+      "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/YesNoUnknown",
+      "version" : "0.2.1",
+      "name" : "YesNoUnknown",
+      "title" : "Yes No Unknown",
+      "status" : "draft",
+      "date" : "2023-06-13T18:28:07+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:d9eed73f-b3f1-4a27-b620-ea21bb98464b",
+        "timestamp" : "2023-06-13T18:28:49+00:00",
+        "total" : 3,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://ritikarawlani.github.io/smart-outbreak-measles/YesNoUnknown|0.2.1"
+        }],
+        "contains" : [{
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/YesNoUnknown",
+          "code" : "Yes",
+          "display" : "Yes"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/YesNoUnknown",
+          "code" : "No",
+          "display" : "No"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/YesNoUnknown",
+          "code" : "Unknown",
+          "display" : "Unknown"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/Results",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-ResultsCs.html\">Results v0.2.1 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-Results-Positive\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ResultsCs.html#ResultsCs-Positive\">Positive</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/Results</td><td>Positive</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-Results-Negative\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ResultsCs.html#ResultsCs-Negative\">Negative</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/Results</td><td>Negative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-Results-PendingUnknown\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ResultsCs.html#ResultsCs-PendingUnknown\">PendingUnknown</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/Results</td><td>Still pending/ Unknown</td></tr></table></div>"
+      },
+      "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/Results",
+      "version" : "0.2.1",
+      "name" : "Results",
+      "title" : "Results",
+      "status" : "draft",
+      "date" : "2023-06-13T18:28:07+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:2a13ef10-795e-4b9e-ab6b-982e2d68240f",
+        "timestamp" : "2023-06-13T18:28:52+00:00",
+        "total" : 3,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://ritikarawlani.github.io/smart-outbreak-measles/Results|0.2.1"
+        }],
+        "contains" : [{
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/Results",
+          "code" : "Positive",
+          "display" : "Positive"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/Results",
+          "code" : "Negative",
+          "display" : "Negative"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/Results",
+          "code" : "PendingUnknown",
+          "display" : "Still pending/ Unknown"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/InitDiag",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "InitDiag",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 6 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-InitDiagCs.html\">Initial Diagnosis Code System v0.2.1 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-InitDiag-1\"> </a>\u00a0\u00a0<a href=\"CodeSystem-InitDiagCs.html#InitDiagCs-1\">1</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/InitDiag</td><td>Measles</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-InitDiag-2\"> </a>\u00a0\u00a0<a href=\"CodeSystem-InitDiagCs.html#InitDiagCs-2\">2</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/InitDiag</td><td>Rubella</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-InitDiag-3\"> </a>\u00a0\u00a0<a href=\"CodeSystem-InitDiagCs.html#InitDiagCs-3\">3</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/InitDiag</td><td>Dengue</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-InitDiag-4\"> </a>\u00a0\u00a0<a href=\"CodeSystem-InitDiagCs.html#InitDiagCs-4\">4</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/InitDiag</td><td>Other Rash illness</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-InitDiag-8\"> </a>\u00a0\u00a0<a href=\"CodeSystem-InitDiagCs.html#InitDiagCs-8\">8</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/InitDiag</td><td>Other Non-Rash illness</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-InitDiag-99\"> </a>\u00a0\u00a0<a href=\"CodeSystem-InitDiagCs.html#InitDiagCs-99\">99</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/InitDiag</td><td>Unknown</td></tr></table></div>"
+      },
+      "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/InitDiag",
+      "version" : "0.2.1",
+      "name" : "InitDiag",
+      "title" : "SOT Measles Initial Diagnosis",
+      "status" : "draft",
+      "expansion" : {
+        "identifier" : "urn:uuid:c060c134-871f-43be-b1ee-5dfface2c18f",
+        "timestamp" : "2023-05-02T20:23:35+05:30",
+        "total" : 6,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://ritikarawlani.github.io/smart-outbreak-measles/InitDiag|0.2.1"
+        }],
+        "contains" : [{
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/InitDiag",
+          "code" : "1",
+          "display" : "Measles"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/InitDiag",
+          "code" : "2",
+          "display" : "Rubella"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/InitDiag",
+          "code" : "3",
+          "display" : "Dengue"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/InitDiag",
+          "code" : "4",
+          "display" : "Other Rash illness"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/InitDiag",
+          "code" : "8",
+          "display" : "Other Non-Rash illness"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/InitDiag",
+          "code" : "99",
+          "display" : "Unknown"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/LocalizationOfSkinDisorder",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-LocalizationOfSkinDisorderCs.html\">Localization of Skin Disorder v0.2.1 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-LocalizationOfSkinDisorder-Systemic\"> </a>\u00a0\u00a0<a href=\"CodeSystem-LocalizationOfSkinDisorderCs.html#LocalizationOfSkinDisorderCs-Systemic\">Systemic</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/LocalizationOfSkinDisorder</td><td>Systemic</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-LocalizationOfSkinDisorder-Localized\"> </a>\u00a0\u00a0<a href=\"CodeSystem-LocalizationOfSkinDisorderCs.html#LocalizationOfSkinDisorderCs-Localized\">Localized</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/LocalizationOfSkinDisorder</td><td>Localized</td></tr></table></div>"
+      },
+      "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/LocalizationOfSkinDisorder",
+      "version" : "0.2.1",
+      "name" : "LocalizationOfSkinDisorder",
+      "title" : "Localization of Skin Disorder",
+      "status" : "draft",
+      "date" : "2023-06-13T18:28:07+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:27c7c106-8e5f-41c4-94fb-56705d85572c",
+        "timestamp" : "2023-06-13T18:28:52+00:00",
+        "total" : 2,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://ritikarawlani.github.io/smart-outbreak-measles/LocalizationOfSkinDisorder|0.2.1"
+        }],
+        "contains" : [{
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/LocalizationOfSkinDisorder",
+          "code" : "Systemic",
+          "display" : "Systemic"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/LocalizationOfSkinDisorder",
+          "code" : "Localized",
+          "display" : "Localized"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/VaccineInfoSource",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-VaccineInfoSourceCs.html\">Vaccine Info Source v0.2.1 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-VaccineInfoSource-VaccinationCard\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VaccineInfoSourceCs.html#VaccineInfoSourceCs-VaccinationCard\">VaccinationCard</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/VaccineInfoSource</td><td>Vaccination Card</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-VaccineInfoSource-HealthServices\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VaccineInfoSourceCs.html#VaccineInfoSourceCs-HealthServices\">HealthServices</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/VaccineInfoSource</td><td>Health Services</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-VaccineInfoSource-ParentsOrOtherAdult\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VaccineInfoSourceCs.html#VaccineInfoSourceCs-ParentsOrOtherAdult\">ParentsOrOtherAdult</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/VaccineInfoSource</td><td>Parents or another adult</td></tr></table></div>"
+      },
+      "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/VaccineInfoSource",
+      "version" : "0.2.1",
+      "name" : "VaccineInfoSource",
+      "title" : "Vaccine Info Source",
+      "status" : "draft",
+      "date" : "2023-06-13T18:28:07+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:010ece90-e90b-425f-b694-eac53c8c599e",
+        "timestamp" : "2023-06-13T18:28:53+00:00",
+        "total" : 3,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://ritikarawlani.github.io/smart-outbreak-measles/VaccineInfoSource|0.2.1"
+        }],
+        "contains" : [{
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/VaccineInfoSource",
+          "code" : "VaccinationCard",
+          "display" : "Vaccination Card"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/VaccineInfoSource",
+          "code" : "HealthServices",
+          "display" : "Health Services"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/VaccineInfoSource",
+          "code" : "ParentsOrOtherAdult",
+          "display" : "Parents or another adult"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/RashType",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 5 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-RashTypeCs.html\">Rash Type v0.2.1 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-RashType-Haemorrhagic\"> </a>\u00a0\u00a0<a href=\"CodeSystem-RashTypeCs.html#RashTypeCs-Haemorrhagic\">Haemorrhagic</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/RashType</td><td>Haemorrhagic</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-RashType-Erythematous\"> </a>\u00a0\u00a0<a href=\"CodeSystem-RashTypeCs.html#RashTypeCs-Erythematous\">Erythematous</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/RashType</td><td>Erythematous</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-RashType-Vesicular-pustular\"> </a>\u00a0\u00a0<a href=\"CodeSystem-RashTypeCs.html#RashTypeCs-Vesicular-pustular\">Vesicular-pustular</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/RashType</td><td>Vesicular-pustular</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-RashType-Petechial-purpuric\"> </a>\u00a0\u00a0<a href=\"CodeSystem-RashTypeCs.html#RashTypeCs-Petechial-purpuric\">Petechial-purpuric</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/RashType</td><td>Petechial-purpuric</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-RashType-Other\"> </a>\u00a0\u00a0<a href=\"CodeSystem-RashTypeCs.html#RashTypeCs-Other\">Other</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/RashType</td><td>Other</td></tr></table></div>"
+      },
+      "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/RashType",
+      "version" : "0.2.1",
+      "name" : "RashType",
+      "title" : "Rash Type",
+      "status" : "draft",
+      "date" : "2023-06-13T18:28:07+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:040f0d79-3409-4aa1-9e58-ce623b972e2e",
+        "timestamp" : "2023-06-13T18:28:53+00:00",
+        "total" : 5,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://ritikarawlani.github.io/smart-outbreak-measles/RashType|0.2.1"
+        }],
+        "contains" : [{
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/RashType",
+          "code" : "Haemorrhagic",
+          "display" : "Haemorrhagic"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/RashType",
+          "code" : "Erythematous",
+          "display" : "Erythematous"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/RashType",
+          "code" : "Vesicular-pustular",
+          "display" : "Vesicular-pustular"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/RashType",
+          "code" : "Petechial-purpuric",
+          "display" : "Petechial-purpuric"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/RashType",
+          "code" : "Other",
+          "display" : "Other"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/RouteOfAdministration",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-RouteOfAdministrationCs.html\">Route Of Administration v0.2.1 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-RouteOfAdministration-IV\"> </a>\u00a0\u00a0<a href=\"CodeSystem-RouteOfAdministrationCs.html#RouteOfAdministrationCs-IV\">IV</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/RouteOfAdministration</td><td>Intravenous</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-RouteOfAdministration-IM\"> </a>\u00a0\u00a0<a href=\"CodeSystem-RouteOfAdministrationCs.html#RouteOfAdministrationCs-IM\">IM</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/RouteOfAdministration</td><td>Intramuscular</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-RouteOfAdministration-Oral\"> </a>\u00a0\u00a0<a href=\"CodeSystem-RouteOfAdministrationCs.html#RouteOfAdministrationCs-Oral\">Oral</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/RouteOfAdministration</td><td>Oral</td></tr></table></div>"
+      },
+      "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/RouteOfAdministration",
+      "version" : "0.2.1",
+      "name" : "RouteOfAdministration",
+      "title" : "Route Of Administration",
+      "status" : "draft",
+      "date" : "2023-06-13T18:28:07+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:bca6892c-5c4c-4ef8-b7d4-ddee580c0263",
+        "timestamp" : "2023-06-13T18:28:53+00:00",
+        "total" : 3,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://ritikarawlani.github.io/smart-outbreak-measles/RouteOfAdministration|0.2.1"
+        }],
+        "contains" : [{
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/RouteOfAdministration",
+          "code" : "IV",
+          "display" : "Intravenous"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/RouteOfAdministration",
+          "code" : "IM",
+          "display" : "Intramuscular"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/RouteOfAdministration",
+          "code" : "Oral",
+          "display" : "Oral"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/DetectedBy",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 8 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-DetectedByCs.html\">Detected By Code System v0.2.1 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-DetectedBy-1\"> </a>\u00a0\u00a0<a href=\"CodeSystem-DetectedByCs.html#DetectedByCs-1\">1</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/DetectedBy</td><td>Spontaneous Consultation</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-DetectedBy-2\"> </a>\u00a0\u00a0<a href=\"CodeSystem-DetectedByCs.html#DetectedByCs-2\">2</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/DetectedBy</td><td>Laboratory</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-DetectedBy-3\"> </a>\u00a0\u00a0<a href=\"CodeSystem-DetectedByCs.html#DetectedByCs-3\">3</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/DetectedBy</td><td>Institutional Search</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-DetectedBy-4\"> </a>\u00a0\u00a0<a href=\"CodeSystem-DetectedByCs.html#DetectedByCs-4\">4</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/DetectedBy</td><td>Community Case Search</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-DetectedBy-5\"> </a>\u00a0\u00a0<a href=\"CodeSystem-DetectedByCs.html#DetectedByCs-5\">5</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/DetectedBy</td><td>Contact Investigation</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-DetectedBy-6\"> </a>\u00a0\u00a0<a href=\"CodeSystem-DetectedByCs.html#DetectedByCs-6\">6</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/DetectedBy</td><td>Community Report</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-DetectedBy-88\"> </a>\u00a0\u00a0<a href=\"CodeSystem-DetectedByCs.html#DetectedByCs-88\">88</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/DetectedBy</td><td>Other</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-DetectedBy-99\"> </a>\u00a0\u00a0<a href=\"CodeSystem-DetectedByCs.html#DetectedByCs-99\">99</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/DetectedBy</td><td>Unknown</td></tr></table></div>"
+      },
+      "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/DetectedBy",
+      "version" : "0.2.1",
+      "name" : "DetectedBy",
+      "title" : "SOT Measles Detected By",
+      "status" : "draft",
+      "date" : "2023-06-13T18:28:07+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:5975fe9c-07fd-4fe2-ae7d-87897b7611f2",
+        "timestamp" : "2023-06-13T18:28:53+00:00",
+        "total" : 8,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://ritikarawlani.github.io/smart-outbreak-measles/DetectedBy|0.2.1"
+        }],
+        "contains" : [{
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/DetectedBy",
+          "code" : "1",
+          "display" : "Spontaneous Consultation"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/DetectedBy",
+          "code" : "2",
+          "display" : "Laboratory"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/DetectedBy",
+          "code" : "3",
+          "display" : "Institutional Search"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/DetectedBy",
+          "code" : "4",
+          "display" : "Community Case Search"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/DetectedBy",
+          "code" : "5",
+          "display" : "Contact Investigation"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/DetectedBy",
+          "code" : "6",
+          "display" : "Community Report"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/DetectedBy",
+          "code" : "88",
+          "display" : "Other"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/DetectedBy",
+          "code" : "99",
+          "display" : "Unknown"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/BiologicalSex",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"http://hl7.org/fhir/R4/codesystem-administrative-gender.html\">AdministrativeGender v4.0.1 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-administrative-gender-male\"> </a>\u00a0\u00a0<a href=\"http://hl7.org/fhir/R4/codesystem-administrative-gender.html#administrative-gender-male\">male</a></td><td>http://hl7.org/fhir/administrative-gender</td><td>Male</td><td><div><p>Male.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-administrative-gender-female\"> </a>\u00a0\u00a0<a href=\"http://hl7.org/fhir/R4/codesystem-administrative-gender.html#administrative-gender-female\">female</a></td><td>http://hl7.org/fhir/administrative-gender</td><td>Female</td><td><div><p>Female.</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/BiologicalSex",
+      "version" : "0.2.1",
+      "name" : "BiologicalSex",
+      "title" : "SOT Biological Sex",
+      "status" : "draft",
+      "date" : "2023-06-13T18:28:07+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:2d81ede8-99a6-4e33-a930-63a16d92a53f",
+        "timestamp" : "2023-06-13T18:28:44+00:00",
+        "total" : 2,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://hl7.org/fhir/administrative-gender|4.0.1"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.org/fhir/administrative-gender",
+          "code" : "male",
+          "display" : "Male"
+        },
+        {
+          "system" : "http://hl7.org/fhir/administrative-gender",
+          "code" : "female",
+          "display" : "Female"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/PatientOutcome",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 5 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-PatientOutcomeCs.html\">Patient Clinical Course Outcome v0.2.1 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-PatientOutcome-Sick\"> </a>\u00a0\u00a0<a href=\"CodeSystem-PatientOutcomeCs.html#PatientOutcomeCs-Sick\">Sick</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/PatientOutcome</td><td>Still sick</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-PatientOutcome-Cured\"> </a>\u00a0\u00a0<a href=\"CodeSystem-PatientOutcomeCs.html#PatientOutcomeCs-Cured\">Cured</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/PatientOutcome</td><td>Cured</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-PatientOutcome-Sequelae\"> </a>\u00a0\u00a0<a href=\"CodeSystem-PatientOutcomeCs.html#PatientOutcomeCs-Sequelae\">Sequelae</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/PatientOutcome</td><td>Sequelae</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-PatientOutcome-Defaulter\"> </a>\u00a0\u00a0<a href=\"CodeSystem-PatientOutcomeCs.html#PatientOutcomeCs-Defaulter\">Defaulter</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/PatientOutcome</td><td>Defaulter</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-PatientOutcome-Death\"> </a>\u00a0\u00a0<a href=\"CodeSystem-PatientOutcomeCs.html#PatientOutcomeCs-Death\">Death</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/PatientOutcome</td><td>Death</td></tr></table></div>"
+      },
+      "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/PatientOutcome",
+      "version" : "0.2.1",
+      "name" : "PatientOutcome",
+      "title" : "Patient Clinical Course Outcome",
+      "status" : "draft",
+      "date" : "2023-06-13T18:28:07+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:02a18a13-8126-4fe1-8e21-a86af66e91ee",
+        "timestamp" : "2023-06-13T18:28:46+00:00",
+        "total" : 5,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://ritikarawlani.github.io/smart-outbreak-measles/PatientOutcome|0.2.1"
+        }],
+        "contains" : [{
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/PatientOutcome",
+          "code" : "Sick",
+          "display" : "Still sick"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/PatientOutcome",
+          "code" : "Cured",
+          "display" : "Cured"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/PatientOutcome",
+          "code" : "Sequelae",
+          "display" : "Sequelae"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/PatientOutcome",
+          "code" : "Defaulter",
+          "display" : "Defaulter"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/PatientOutcome",
+          "code" : "Death",
+          "display" : "Death"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/InitDiag",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "InitDiag",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 6 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-InitDiagCs.html\">Initial Diagnosis Code System v0.2.1 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-InitDiag-1\"> </a>\u00a0\u00a0<a href=\"CodeSystem-InitDiagCs.html#InitDiagCs-1\">1</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/InitDiag</td><td>Measles</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-InitDiag-2\"> </a>\u00a0\u00a0<a href=\"CodeSystem-InitDiagCs.html#InitDiagCs-2\">2</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/InitDiag</td><td>Rubella</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-InitDiag-3\"> </a>\u00a0\u00a0<a href=\"CodeSystem-InitDiagCs.html#InitDiagCs-3\">3</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/InitDiag</td><td>Dengue</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-InitDiag-4\"> </a>\u00a0\u00a0<a href=\"CodeSystem-InitDiagCs.html#InitDiagCs-4\">4</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/InitDiag</td><td>Other Rash illness</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-InitDiag-8\"> </a>\u00a0\u00a0<a href=\"CodeSystem-InitDiagCs.html#InitDiagCs-8\">8</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/InitDiag</td><td>Other Non-Rash illness</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-InitDiag-99\"> </a>\u00a0\u00a0<a href=\"CodeSystem-InitDiagCs.html#InitDiagCs-99\">99</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/InitDiag</td><td>Unknown</td></tr></table></div>"
+      },
+      "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/InitDiag",
+      "version" : "0.2.1",
+      "name" : "InitDiag",
+      "title" : "SOT Measles Initial Diagnosis",
+      "status" : "draft",
+      "date" : "2023-06-13T18:28:07+00:00",
+      "publisher" : "WHO",
+      "contact" : [{
+        "name" : "WHO",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://who.int"
+        }]
+      }],
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:c060c134-871f-43be-b1ee-5dfface2c18f",
+        "timestamp" : "2023-05-02T20:23:35+05:30",
+        "total" : 6,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://ritikarawlani.github.io/smart-outbreak-measles/InitDiag|0.2.1"
+        }],
+        "contains" : [{
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/InitDiag",
+          "code" : "1",
+          "display" : "Measles"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/InitDiag",
+          "code" : "2",
+          "display" : "Rubella"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/InitDiag",
+          "code" : "3",
+          "display" : "Dengue"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/InitDiag",
+          "code" : "4",
+          "display" : "Other Rash illness"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/InitDiag",
+          "code" : "8",
+          "display" : "Other Non-Rash illness"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/InitDiag",
+          "code" : "99",
+          "display" : "Unknown"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/PlaceOfCare",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-PlaceOfCareCs.html\">Place Of Care v0.2.1 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-PlaceOfCare-Home\"> </a>\u00a0\u00a0<a href=\"CodeSystem-PlaceOfCareCs.html#PlaceOfCareCs-Home\">Home</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/PlaceOfCare</td><td>at home</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-PlaceOfCare-HealthFacility\"> </a>\u00a0\u00a0<a href=\"CodeSystem-PlaceOfCareCs.html#PlaceOfCareCs-HealthFacility\">HealthFacility</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/PlaceOfCare</td><td>at health facility</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-PlaceOfCare-TraditionalClinic\"> </a>\u00a0\u00a0<a href=\"CodeSystem-PlaceOfCareCs.html#PlaceOfCareCs-TraditionalClinic\">TraditionalClinic</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/PlaceOfCare</td><td>at traditional clinic</td></tr></table></div>"
+      },
+      "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/PlaceOfCare",
+      "version" : "0.2.1",
+      "name" : "PlaceOfCare",
+      "title" : "Place Of Care",
+      "status" : "draft",
+      "date" : "2023-06-13T18:28:07+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:38937e9f-2f69-4baf-a6d0-83dc4afefae3",
+        "timestamp" : "2023-06-13T18:28:56+00:00",
+        "total" : 3,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://ritikarawlani.github.io/smart-outbreak-measles/PlaceOfCare|0.2.1"
+        }],
+        "contains" : [{
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/PlaceOfCare",
+          "code" : "Home",
+          "display" : "at home"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/PlaceOfCare",
+          "code" : "HealthFacility",
+          "display" : "at health facility"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/PlaceOfCare",
+          "code" : "TraditionalClinic",
+          "display" : "at traditional clinic"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/ReportedBy",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 5 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-ReportedByCs.html\">Reported By v0.2.1 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-ReportedBy-MobileTeam\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ReportedByCs.html#ReportedByCs-MobileTeam\">MobileTeam</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/ReportedBy</td><td>Mobile team</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-ReportedBy-HealthCentre\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ReportedByCs.html#ReportedByCs-HealthCentre\">HealthCentre</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/ReportedBy</td><td>Health Cantre/post</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-ReportedBy-Hospital\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ReportedByCs.html#ReportedByCs-Hospital\">Hospital</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/ReportedBy</td><td>Hospital</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-ReportedBy-Other\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ReportedByCs.html#ReportedByCs-Other\">Other</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/ReportedBy</td><td>Other</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---ritikarawlani.github.io-smart-outbreak-measles-ReportedBy-Unknown\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ReportedByCs.html#ReportedByCs-Unknown\">Unknown</a></td><td>http://ritikarawlani.github.io/smart-outbreak-measles/ReportedBy</td><td>Unknown</td></tr></table></div>"
+      },
+      "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/ReportedBy",
+      "version" : "0.2.1",
+      "name" : "ReportedBy",
+      "title" : "Reported By",
+      "status" : "draft",
+      "date" : "2023-06-13T18:28:07+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:e74ab31c-0bd5-40c2-af3b-cb74ef2755e6",
+        "timestamp" : "2023-06-13T18:28:56+00:00",
+        "total" : 5,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://ritikarawlani.github.io/smart-outbreak-measles/ReportedBy|0.2.1"
+        }],
+        "contains" : [{
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/ReportedBy",
+          "code" : "MobileTeam",
+          "display" : "Mobile team"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/ReportedBy",
+          "code" : "HealthCentre",
+          "display" : "Health Cantre/post"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/ReportedBy",
+          "code" : "Hospital",
+          "display" : "Hospital"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/ReportedBy",
+          "code" : "Other",
+          "display" : "Other"
+        },
+        {
+          "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/ReportedBy",
+          "code" : "Unknown",
+          "display" : "Unknown"
+        }]
+      }
+    }
+  }]
+}

@@ -1,0 +1,191 @@
+[
+  {
+    "id" : "DetectedByCs",
+    "type" : "CodeSystem",
+    "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/DetectedBy",
+    "version" : "0.2.1",
+    "name" : "DetectedByCs"
+  },
+  {
+    "id" : "fhir.ritikarawlani.smart-outbreak-measles",
+    "type" : "ImplementationGuide",
+    "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/ImplementationGuide/fhir.ritikarawlani.smart-outbreak-measles",
+    "version" : "0.2.1",
+    "name" : "smartoutbreakmeasles"
+  },
+  {
+    "id" : "InitDiagCs",
+    "type" : "CodeSystem",
+    "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/InitDiag",
+    "version" : "0.2.1",
+    "name" : "InitDiagCs"
+  },
+  {
+    "id" : "LocTypeCs",
+    "type" : "CodeSystem",
+    "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/LocType",
+    "version" : "0.2.1",
+    "name" : "LocTypeCs"
+  },
+  {
+    "id" : "ProvTypeCs",
+    "type" : "CodeSystem",
+    "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/ProvType",
+    "version" : "0.2.1",
+    "name" : "ProvTypeCs"
+  },
+  {
+    "id" : "Questionnaire-SOTMeasles",
+    "type" : "Questionnaire",
+    "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/Questionnaire/Questionnaire-SOTMeasles",
+    "version" : "0.2.1",
+    "name" : "Questionnaire-SOTMeasles"
+  },
+  {
+    "id" : "Questionnaire-SOTT0CaseInvestigationForm",
+    "type" : "Questionnaire",
+    "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/Questionnaire/Questionnaire-SOTT0CaseInvestigationForm",
+    "version" : "0.2.1",
+    "name" : "Questionnaire-SOTT0CaseInvestigationForm"
+  },
+  {
+    "id" : "SOTMeasles",
+    "type" : "StructureDefinition",
+    "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/StructureDefinition/SOTMeasles",
+    "version" : "0.2.1",
+    "name" : "SOTMeasles"
+  },
+  {
+    "id" : "SOTMeaslesClassification",
+    "type" : "StructureDefinition",
+    "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/StructureDefinition/SOTMeaslesClassification",
+    "version" : "0.2.1",
+    "name" : "SOTMeaslesClassification"
+  },
+  {
+    "id" : "SOTMeaslesClinical",
+    "type" : "StructureDefinition",
+    "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/StructureDefinition/SOTMeaslesClinical",
+    "version" : "0.2.1",
+    "name" : "SOTMeaslesClinical"
+  },
+  {
+    "id" : "SOTMeaslesContactTracing",
+    "type" : "StructureDefinition",
+    "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/StructureDefinition/SOTMeaslesContactTracing",
+    "version" : "0.2.1",
+    "name" : "SOTMeaslesContactTracing"
+  },
+  {
+    "id" : "SOTMeaslesDemographic",
+    "type" : "StructureDefinition",
+    "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/StructureDefinition/SOTMeaslesDemographic",
+    "version" : "0.2.1",
+    "name" : "SOTMeaslesDemographic"
+  },
+  {
+    "id" : "SOTMeaslesEpiData",
+    "type" : "StructureDefinition",
+    "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/StructureDefinition/SOTMeaslesEpiData",
+    "version" : "0.2.1",
+    "name" : "SOTMeaslesEpiData"
+  },
+  {
+    "id" : "SOTMeaslesLaboratoryResults",
+    "type" : "StructureDefinition",
+    "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/StructureDefinition/SOTMeaslesLaboratoryResults",
+    "version" : "0.2.1",
+    "name" : "SOTMeaslesLaboratoryResults"
+  },
+  {
+    "id" : "SOTMeaslesReportingSource",
+    "type" : "StructureDefinition",
+    "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/StructureDefinition/SOTMeaslesReportingSource",
+    "version" : "0.2.1",
+    "name" : "SOTMeaslesReportingSource"
+  },
+  {
+    "id" : "SOTT1Exposure",
+    "type" : "StructureDefinition",
+    "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/StructureDefinition/SOTMeaslesT1Exposure",
+    "version" : "0.2.1",
+    "name" : "SOTT1Exposure"
+  },
+  {
+    "id" : "SOTT1NotificationInterview",
+    "type" : "StructureDefinition",
+    "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/StructureDefinition/SOTMeaslesT1NotificationInterview",
+    "version" : "0.2.1",
+    "name" : "SOTT1NotificationInterview"
+  },
+  {
+    "id" : "SOTMeaslesVaccinationStatus",
+    "type" : "StructureDefinition",
+    "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/StructureDefinition/SOTMeaslesVaccinationStatus",
+    "version" : "0.2.1",
+    "name" : "SOTMeaslesVaccinationStatus"
+  },
+  {
+    "id" : "SOTT1",
+    "type" : "StructureDefinition",
+    "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/StructureDefinition/SOTT1",
+    "version" : "0.2.1",
+    "name" : "SOTT1"
+  },
+  {
+    "id" : "SOTT1CaseInfo",
+    "type" : "StructureDefinition",
+    "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/StructureDefinition/SOTT1CaseInfo",
+    "version" : "0.2.1",
+    "name" : "SOTT1CaseInfo"
+  },
+  {
+    "id" : "SOTT1Clinical",
+    "type" : "StructureDefinition",
+    "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/StructureDefinition/SOTT1Clinical",
+    "version" : "0.2.1",
+    "name" : "SOTT1Clinical"
+  },
+  {
+    "id" : "SOTT1Conclusion",
+    "type" : "StructureDefinition",
+    "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/StructureDefinition/SOTT1Conclusion",
+    "version" : "0.2.1",
+    "name" : "SOTT1Conclusion"
+  },
+  {
+    "id" : "SOTT1Laboratory",
+    "type" : "StructureDefinition",
+    "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/StructureDefinition/SOTT1Laboratory",
+    "version" : "0.2.1",
+    "name" : "SOTT1Laboratory"
+  },
+  {
+    "id" : "DetectedBy",
+    "type" : "ValueSet",
+    "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/DetectedBy",
+    "version" : "0.2.1",
+    "name" : "DetectedBy"
+  },
+  {
+    "id" : "InitDiag",
+    "type" : "ValueSet",
+    "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/InitDiag",
+    "version" : "0.2.1",
+    "name" : "InitDiag"
+  },
+  {
+    "id" : "LocType",
+    "type" : "ValueSet",
+    "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/LocType",
+    "version" : "0.2.1",
+    "name" : "LocType"
+  },
+  {
+    "id" : "ProvType",
+    "type" : "ValueSet",
+    "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/ProvType",
+    "version" : "0.2.1",
+    "name" : "ProvType"
+  }
+]

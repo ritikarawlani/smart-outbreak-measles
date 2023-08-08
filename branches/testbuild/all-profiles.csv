@@ -1,0 +1,659 @@
+"Profile","Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"SOTT1Exposure","SOTMeaslesT1Exposure","SOTMeaslesT1Exposure","","","",0,*,"","","","null {[]} {[]}
+","Surveillance & Outbreak Toolkit T1  Exposure","Base definition for all elements that are defined inside a resource - but not those in a data type.","","","","","","","","","",,,,,"",,,,"BackboneElement",0,*,"ele-1
+",""
+"SOTT1Exposure","SOTMeaslesT1Exposure.id","SOTMeaslesT1Exposure.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"SOTT1Exposure","SOTMeaslesT1Exposure.extension","SOTMeaslesT1Exposure.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"SOTT1Exposure","SOTMeaslesT1Exposure.modifierExtension","SOTMeaslesT1Exposure.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"SOTT1Exposure","SOTMeaslesT1Exposure.ContactsBeforeSymptom","SOTMeaslesT1Exposure.ContactsBeforeSymptom","","","",0,1,"","","","markdown {[]} {[]}
+","Contacts 7-23 days before symptom onset","Persons who came in contact with the case 7–23 days before symptom onset (source of case’s infection). Determine if any of them had rash illness with fever. exposed by the case)","","","","","","","","","",,,,,"",,,,"SOTMeaslesT1Exposure.ContactsBeforeSymptom",0,1,"",""
+"SOTT1Exposure","SOTMeaslesT1Exposure.ContactsAroundRash","SOTMeaslesT1Exposure.ContactsAroundRash","","","",0,1,"","","","markdown {[]} {[]}
+","Potential persons exposed by the case","Persons who came in contact with the case in the four days prior to and four days after rash onset ","","","","","","","","","",,,,,"",,,,"SOTMeaslesT1Exposure.ContactsAroundRash",0,1,"",""
+"SOTT1Exposure","SOTMeaslesT1Exposure.PregnantWomanContact","SOTMeaslesT1Exposure.PregnantWomanContact","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Was the patient in contact with any pregnant woman?","Was the patient in contact with any pregnant woman?","","","","","","","","","",,,,,"",,,,"SOTMeaslesT1Exposure.PregnantWomanContact",0,1,"",""
+"SOTT1Exposure","SOTMeaslesT1Exposure.Names","SOTMeaslesT1Exposure.Names","","","",0,*,"","","","string {[]} {[]}
+","Names, if yes","Names","","","","","","","","","",,,,,"",,,,"SOTMeaslesT1Exposure.Names",0,*,"",""
+"SOTMeaslesContactTracing","SOTMeaslesContactTracing","SOTMeaslesContactTracing","","","",0,*,"","","","null {[]} {[]}
+","Surveillance & Outbreak Toolkit Measles- Contact Tracing","Base definition for all elements that are defined inside a resource - but not those in a data type.","","","","","","","","","",,,,,"",,,,"BackboneElement",0,*,"ele-1
+",""
+"SOTMeaslesContactTracing","SOTMeaslesContactTracing.id","SOTMeaslesContactTracing.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"SOTMeaslesContactTracing","SOTMeaslesContactTracing.extension","SOTMeaslesContactTracing.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"SOTMeaslesContactTracing","SOTMeaslesContactTracing.modifierExtension","SOTMeaslesContactTracing.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"SOTMeaslesContactTracing","SOTMeaslesContactTracing.ContactsBeforeSymptom","SOTMeaslesContactTracing.ContactsBeforeSymptom","","","",0,1,"","","","markdown {[]} {[]}
+","Contacts 7-23 days before symptom onset","Persons who came in contact with the case 7–23 days before symptom onset (source of case’s infection). Determine if any of them had rash illness with fever. exposed by the case)","","","","","","","","","",,,,,"",,,,"SOTMeaslesContactTracing.ContactsBeforeSymptom",0,1,"",""
+"SOTMeaslesContactTracing","SOTMeaslesContactTracing.ContactsAroundRash","SOTMeaslesContactTracing.ContactsAroundRash","","","",0,1,"","","","markdown {[]} {[]}
+","Potential persons exposed by the case","Persons who came in contact with the case in the four days prior to and four days after rash onset ","","","","","","","","","",,,,,"",,,,"SOTMeaslesContactTracing.ContactsAroundRash",0,1,"",""
+"SOTMeaslesContactTracing","SOTMeaslesContactTracing.PregnantWomanContact","SOTMeaslesContactTracing.PregnantWomanContact","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Was the patient in contact with any pregnant woman?","Was the patient in contact with any pregnant woman?","","","","","","","","","",,,,,"",,,,"SOTMeaslesContactTracing.PregnantWomanContact",0,1,"",""
+"SOTMeaslesContactTracing","SOTMeaslesContactTracing.Names","SOTMeaslesContactTracing.Names","","","",0,*,"","","","string {[]} {[]}
+","Names, if yes","Names","","","","","","","","","",,,,,"",,,,"SOTMeaslesContactTracing.Names",0,*,"",""
+"SOTMeaslesDemographic","SOTMeaslesDemographic","SOTMeaslesDemographic","","","",0,*,"","","","null {[]} {[]}
+","Surveillance & Outbreak Toolkit Measles- Demographics","Base definition for all elements that are defined inside a resource - but not those in a data type.","","","","","","","","","",,,,,"",,,,"BackboneElement",0,*,"ele-1
+",""
+"SOTMeaslesDemographic","SOTMeaslesDemographic.id","SOTMeaslesDemographic.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"SOTMeaslesDemographic","SOTMeaslesDemographic.extension","SOTMeaslesDemographic.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"SOTMeaslesDemographic","SOTMeaslesDemographic.modifierExtension","SOTMeaslesDemographic.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"SOTMeaslesDemographic","SOTMeaslesDemographic.UniqueId","SOTMeaslesDemographic.UniqueId","","","",1,1,"","","","id {[]} {[]}
+","Unique identification","Generated for new clients or a universal ID, if used in the country","","","","","","","","","",,,,,"",,,,"SOTMeaslesDemographic.UniqueId",1,1,"",""
+"SOTMeaslesDemographic","SOTMeaslesDemographic.Name","SOTMeaslesDemographic.Name","","","",0,1,"","","","HumanName {[]} {[]}
+","Client's name","Client's full name","","","","","","","","","",,,,,"",,,,"SOTMeaslesDemographic.Name",0,1,"",""
+"SOTMeaslesDemographic","SOTMeaslesDemographic.DateOfBirth","SOTMeaslesDemographic.DateOfBirth","","","",0,1,"","","","date {[]} {[]}
+","Date of birth","The client's date of birth (DOB), if known","","","","","","","","","",,,,,"",,,,"SOTMeaslesDemographic.DateOfBirth",0,1,"",""
+"SOTMeaslesDemographic","SOTMeaslesDemographic.Age","SOTMeaslesDemographic.Age","","","",0,1,"","","","Quantity {[]} {[]}
+","Age (number of years)","Age of the client if date of birth is not known","","","","","","","","","",,,,,"",,,,"SOTMeaslesDemographic.Age",0,1,"",""
+"SOTMeaslesDemographic","SOTMeaslesDemographic.Sex","SOTMeaslesDemographic.Sex","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Sex at birth","Assigned sex at birth of the client","","","","","","","","","",,,,,"",,,,"SOTMeaslesDemographic.Sex",1,1,"",""
+"SOTMeaslesDemographic","SOTMeaslesDemographic.Ethnicity","SOTMeaslesDemographic.Ethnicity","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Race/Ethnicity","Client's race and/or ethnicity, if appropriate in country setting","","","","","","","","","",,,,,"",,,,"SOTMeaslesDemographic.Ethnicity",0,1,"",""
+"SOTMeaslesDemographic","SOTMeaslesDemographic.PlaceOfResidence","SOTMeaslesDemographic.PlaceOfResidence","","","",1,1,"","","","Address {[]} {[]}
+","Client's address (city, district, and province)","Client's home address or address that the client is consenting to disclose","","","","","","","","","",,,,,"",,,,"SOTMeaslesDemographic.PlaceOfResidence",1,1,"",""
+"SOTMeaslesDemographic","SOTMeaslesDemographic.CountryofBirth","SOTMeaslesDemographic.CountryofBirth","","","",1,1,"","","","string {[]} {[]}
+","Country of birth","Country of birth","","","","","","","","","",,,,,"",,,,"SOTMeaslesDemographic.CountryofBirth",1,1,"",""
+"SOTMeaslesDemographic","SOTMeaslesDemographic.Landmark","SOTMeaslesDemographic.Landmark","","","",0,1,"","","","string {[]} {[]}
+","Landmark","A landmark to locate the house","","","","","","","","","",,,,,"",,,,"SOTMeaslesDemographic.Landmark",0,1,"",""
+"SOTMeaslesDemographic","SOTMeaslesDemographic.LocalityType","SOTMeaslesDemographic.LocalityType","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Type of locality","Type of Locality","","","","","","","","","",,,,,"",,,,"SOTMeaslesDemographic.LocalityType",1,1,"",""
+"SOTMeaslesDemographic","SOTMeaslesDemographic.Guardian","SOTMeaslesDemographic.Guardian","","","",0,1,"","","","HumanName {[]} {[]}
+","Name of mother/Guardian","Name of mother/Guardian","","","","","","","","","",,,,,"",,,,"SOTMeaslesDemographic.Guardian",0,1,"",""
+"SOTMeaslesDemographic","SOTMeaslesDemographic.Telephone","SOTMeaslesDemographic.Telephone","","","",0,1,"","","","ContactPoint {[]} {[]}
+","Telephone","Telephone","","","","","","","","","",,,,,"",,,,"SOTMeaslesDemographic.Telephone",0,1,"",""
+"SOTMeaslesDemographic","SOTMeaslesDemographic.Occupation","SOTMeaslesDemographic.Occupation","","","",0,1,"","","","string {[]} {[]}
+","Occupation","Occupation","","","","","","","","","",,,,,"",,,,"SOTMeaslesDemographic.Occupation",0,1,"",""
+"SOTMeaslesDemographic","SOTMeaslesDemographic.WorkAddress","SOTMeaslesDemographic.WorkAddress","","","",0,1,"","","","Address {[]} {[]}
+","Work or school address","Work or school address","","","","","","","","","",,,,,"",,,,"SOTMeaslesDemographic.WorkAddress",0,1,"",""
+"SOTMeaslesDemographic","SOTMeaslesDemographic.PlaceOfInfection","SOTMeaslesDemographic.PlaceOfInfection","","","",0,1,"","","","string {[]} {[]}
+","Place of infection","Place of infection","","","","","","","","","",,,,,"",,,,"SOTMeaslesDemographic.PlaceOfInfection",0,1,"",""
+"SOTMeaslesReportingSource","SOTMeaslesReportingSource","SOTMeaslesReportingSource","","","",0,*,"","","","null {[]} {[]}
+","Surveillance & Outbreak Toolkit Measles- Reporting Source","Base definition for all elements that are defined inside a resource - but not those in a data type.","","","","","","","","","",,,,,"",,,,"BackboneElement",0,*,"ele-1
+",""
+"SOTMeaslesReportingSource","SOTMeaslesReportingSource.id","SOTMeaslesReportingSource.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"SOTMeaslesReportingSource","SOTMeaslesReportingSource.extension","SOTMeaslesReportingSource.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"SOTMeaslesReportingSource","SOTMeaslesReportingSource.modifierExtension","SOTMeaslesReportingSource.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"SOTMeaslesReportingSource","SOTMeaslesReportingSource.PlaceOfReporting","SOTMeaslesReportingSource.PlaceOfReporting","","","",1,1,"","","","Address {[]} {[]}
+","Place of reporting","Place of reporting (for example, county or district)","","","","","","","","","",,,,,"",,,,"SOTMeaslesReportingSource.PlaceOfReporting",1,1,"",""
+"SOTMeaslesReportingSource","SOTMeaslesReportingSource.DateOfNotification","SOTMeaslesReportingSource.DateOfNotification","","","",1,1,"","","","date {[]} {[]}
+","Date of notification","Date of notification","","","","","","","","","",,,,,"",,,,"SOTMeaslesReportingSource.DateOfNotification",1,1,"",""
+"SOTMeaslesReportingSource","SOTMeaslesReportingSource.DateOfInvestigation","SOTMeaslesReportingSource.DateOfInvestigation","","","",1,1,"","","","date {[]} {[]}
+","Date of investigation","Date of investigation","","","","","","","","","",,,,,"",,,,"SOTMeaslesReportingSource.DateOfInvestigation",1,1,"",""
+"SOTMeaslesReportingSource","SOTMeaslesReportingSource.ReportedBy","SOTMeaslesReportingSource.ReportedBy","","","",1,1,"","","","string {[]} {[]}
+","Reported by","Name of clinician who supects measles (or rubella)","","","","","","","","","",,,,,"",,,,"SOTMeaslesReportingSource.ReportedBy",1,1,"",""
+"SOTMeaslesReportingSource","SOTMeaslesReportingSource.HealthServiceName","SOTMeaslesReportingSource.HealthServiceName","","","",1,1,"","","","string {[]} {[]}
+","Health service name","Health service name","","","","","","","","","",,,,,"",,,,"SOTMeaslesReportingSource.HealthServiceName",1,1,"",""
+"SOTMeaslesReportingSource","SOTMeaslesReportingSource.HealthServiceTelephone","SOTMeaslesReportingSource.HealthServiceTelephone","","","",1,*,"","","","ContactPoint {[]} {[]}
+","Health service telephone","Health service telephone","","","","","","","","","",,,,,"",,,,"SOTMeaslesReportingSource.HealthServiceTelephone",1,*,"",""
+"SOTMeaslesReportingSource","SOTMeaslesReportingSource.DateOfConsultation","SOTMeaslesReportingSource.DateOfConsultation","","","",0,1,"","","","date {[]} {[]}
+","Date of consultation","Date of consultation","","","","","","","","","",,,,,"",,,,"SOTMeaslesReportingSource.DateOfConsultation",0,1,"",""
+"SOTMeaslesReportingSource","SOTMeaslesReportingSource.DateOfHomeVisit","SOTMeaslesReportingSource.DateOfHomeVisit","","","",0,1,"","","","date {[]} {[]}
+","Date of home visit","Date of home visit","","","","","","","","","",,,,,"",,,,"SOTMeaslesReportingSource.DateOfHomeVisit",0,1,"",""
+"SOTMeaslesReportingSource","SOTMeaslesReportingSource.DateReportedLocal","SOTMeaslesReportingSource.DateReportedLocal","","","",0,1,"","","","date {[]} {[]}
+","DateReported, Local","DateReported, Local","","","","","","","","","",,,,,"",,,,"SOTMeaslesReportingSource.DateReportedLocal",0,1,"",""
+"SOTMeaslesReportingSource","SOTMeaslesReportingSource.DateReportedNational","SOTMeaslesReportingSource.DateReportedNational","","","",0,1,"","","","date {[]} {[]}
+","DateReported, National","DateReported, National","","","","","","","","","",,,,,"",,,,"SOTMeaslesReportingSource.DateReportedNational",0,1,"",""
+"SOTMeaslesReportingSource","SOTMeaslesReportingSource.DetectedBy","SOTMeaslesReportingSource.DetectedBy","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Detected By","Detected By","","","","","","","","","",,,,,"",,,,"SOTMeaslesReportingSource.DetectedBy",1,1,"",""
+"SOTMeaslesReportingSource","SOTMeaslesReportingSource.TypeOfProviderReporting","SOTMeaslesReportingSource.TypeOfProviderReporting","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Type Of Provider Reporting","Type Of Provider Reporting","","","","","","","","","",,,,,"",,,,"SOTMeaslesReportingSource.TypeOfProviderReporting",1,1,"",""
+"SOTMeaslesReportingSource","SOTMeaslesReportingSource.InitialDiagnosis","SOTMeaslesReportingSource.InitialDiagnosis","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Initial Diagnosis","Initial Diagnosis","","","","","","","","","",,,,,"",,,,"SOTMeaslesReportingSource.InitialDiagnosis",0,1,"",""
+"SOTMeaslesEpiData","SOTMeaslesEpiData","SOTMeaslesEpiData","","","",0,*,"","","","null {[]} {[]}
+","Surveillance & Outbreak Toolkit Measles- Epidemiological Data","Base definition for all elements that are defined inside a resource - but not those in a data type.","","","","","","","","","",,,,,"",,,,"BackboneElement",0,*,"ele-1
+",""
+"SOTMeaslesEpiData","SOTMeaslesEpiData.id","SOTMeaslesEpiData.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"SOTMeaslesEpiData","SOTMeaslesEpiData.extension","SOTMeaslesEpiData.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"SOTMeaslesEpiData","SOTMeaslesEpiData.modifierExtension","SOTMeaslesEpiData.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"SOTMeaslesEpiData","SOTMeaslesEpiData.TransmissionSetting","SOTMeaslesEpiData.TransmissionSetting","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Transmission Setting","Transmission Setting","","","","","","","","","",,,,,"",,,,"SOTMeaslesEpiData.TransmissionSetting",1,1,"",""
+"SOTMeaslesEpiData","SOTMeaslesEpiData.SchoolEnrollment","SOTMeaslesEpiData.SchoolEnrollment","","","",1,1,"","","","Coding {[]} {[]}
+","Enrolled in school?","Enrolled in school","","","","","","","","","",,,,,"",,,,"SOTMeaslesEpiData.SchoolEnrollment",1,1,"",""
+"SOTMeaslesEpiData","SOTMeaslesEpiData.SchoolName","SOTMeaslesEpiData.SchoolName","","","",0,1,"","","","string {[]} {[]}
+","Name of school","Name of school","","","","","","","","","",,,,,"",,,,"SOTMeaslesEpiData.SchoolName",0,1,"",""
+"SOTMeaslesEpiData","SOTMeaslesEpiData.VisitedHealthFacility","SOTMeaslesEpiData.VisitedHealthFacility","","","",1,1,"","","","Coding {[]} {[]}
+","Visited a health facility in the 7–23 days before symptom onset?","Visited a health facility in the 7–23 days before symptom onset?","","","","","","","","","",,,,,"",,,,"SOTMeaslesEpiData.VisitedHealthFacility",1,1,"",""
+"SOTMeaslesEpiData","SOTMeaslesEpiData.FacilityName","SOTMeaslesEpiData.FacilityName","","","",0,1,"","","","string {[]} {[]}
+","Name of the facility","Name of the facility","","","","","","","","","",,,,,"",,,,"SOTMeaslesEpiData.FacilityName",0,1,"",""
+"SOTMeaslesEpiData","SOTMeaslesEpiData.TravelHistory","SOTMeaslesEpiData.TravelHistory","","","",0,1,"","","","markdown {[]} {[]}
+","Travel history in the past 7-23 days?","Travel history in the past 7-23 days?","","","","","","","","","",,,,,"",,,,"SOTMeaslesEpiData.TravelHistory",0,1,"",""
+"SOTMeaslesEpiData","SOTMeaslesEpiData.OutbreakRelationship","SOTMeaslesEpiData.OutbreakRelationship","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Relationship to outbreak (Is the case part of an outbreak or is it sporadic?)","Relationship to outbreak (Is the case part of an outbreak or is it sporadic?)","","","","","","","","","",,,,,"",,,,"SOTMeaslesEpiData.OutbreakRelationship",1,1,"",""
+"SOTMeasles","SOTMeasles","SOTMeasles","","","",0,*,"","","","null {[]} {[]}
+","Surveillance & Outbreak Toolkit Measles","Base definition for all elements that are defined inside a resource - but not those in a data type.","","","","","","","","","",,,,,"",,,,"BackboneElement",0,*,"ele-1
+",""
+"SOTMeasles","SOTMeasles.id","SOTMeasles.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"SOTMeasles","SOTMeasles.extension","SOTMeasles.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"SOTMeasles","SOTMeasles.modifierExtension","SOTMeasles.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"SOTMeasles","SOTMeasles.Demographics","SOTMeasles.Demographics","","","",1,1,"","","","http://ritikarawlani.github.io/smart-outbreak-measles/StructureDefinition/SOTMeaslesDemographic {[]} {[]}
+","Demographics","Demographics","","","","","","","","","",,,,,"",,,,"SOTMeasles.Demographics",1,1,"",""
+"SOTMeasles","SOTMeasles.ReportingSource","SOTMeasles.ReportingSource","","","",1,1,"","","","http://ritikarawlani.github.io/smart-outbreak-measles/StructureDefinition/SOTMeaslesReportingSource {[]} {[]}
+","Reporting Souce","Reporting Source","","","","","","","","","",,,,,"",,,,"SOTMeasles.ReportingSource",1,1,"",""
+"SOTMeasles","SOTMeasles.Clinical","SOTMeasles.Clinical","","","",1,1,"","","","http://ritikarawlani.github.io/smart-outbreak-measles/StructureDefinition/SOTMeaslesClinical {[]} {[]}
+","Clinical","Clinical","","","","","","","","","",,,,,"",,,,"SOTMeasles.Clinical",1,1,"",""
+"SOTMeasles","SOTMeasles.LaboratoryResults","SOTMeasles.LaboratoryResults","","","",1,*,"","","","http://ritikarawlani.github.io/smart-outbreak-measles/StructureDefinition/SOTMeaslesLaboratoryResults {[]} {[]}
+","Laboratory Results","Laboratory Results","","","","","","","","","",,,,,"",,,,"SOTMeasles.LaboratoryResults",1,*,"",""
+"SOTMeasles","SOTMeasles.VaccinationStatus","SOTMeasles.VaccinationStatus","","","",1,*,"","","","http://ritikarawlani.github.io/smart-outbreak-measles/StructureDefinition/SOTMeaslesVaccinationStatus {[]} {[]}
+","Vaccination Status","Vaccination Status","","","","","","","","","",,,,,"",,,,"SOTMeasles.VaccinationStatus",1,*,"",""
+"SOTMeasles","SOTMeasles.ContactTracing","SOTMeasles.ContactTracing","","","",1,*,"","","","http://ritikarawlani.github.io/smart-outbreak-measles/StructureDefinition/SOTMeaslesContactTracing {[]} {[]}
+","Contact Tracing","Contact Tracing","","","","","","","","","",,,,,"",,,,"SOTMeasles.ContactTracing",1,*,"",""
+"SOTMeasles","SOTMeasles.EpiData","SOTMeasles.EpiData","","","",1,1,"","","","http://ritikarawlani.github.io/smart-outbreak-measles/StructureDefinition/SOTMeaslesEpiData {[]} {[]}
+","Epidemiological Data","Epidemiological Data","","","","","","","","","",,,,,"",,,,"SOTMeasles.EpiData",1,1,"",""
+"SOTMeasles","SOTMeasles.Classification","SOTMeasles.Classification","","","",1,1,"","","","http://ritikarawlani.github.io/smart-outbreak-measles/StructureDefinition/SOTMeaslesClassification {[]} {[]}
+","Classification","Classification","","","","","","","","","",,,,,"",,,,"SOTMeasles.Classification",1,1,"",""
+"SOTMeaslesClinical","SOTMeaslesClinical","SOTMeaslesClinical","","","",0,*,"","","","null {[]} {[]}
+","Surveillance & Outbreak Toolkit Measles- Clinical","Base definition for all elements that are defined inside a resource - but not those in a data type.","","","","","","","","","",,,,,"",,,,"BackboneElement",0,*,"ele-1
+",""
+"SOTMeaslesClinical","SOTMeaslesClinical.id","SOTMeaslesClinical.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"SOTMeaslesClinical","SOTMeaslesClinical.extension","SOTMeaslesClinical.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"SOTMeaslesClinical","SOTMeaslesClinical.modifierExtension","SOTMeaslesClinical.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"SOTMeaslesClinical","SOTMeaslesClinical.RashOnsetDate","SOTMeaslesClinical.RashOnsetDate","","","",0,1,"","","","date {[]} {[]}
+","Date of rash onset","Date of rash onset","","","","","","","","","",,,,,"",,,,"SOTMeaslesClinical.RashOnsetDate",0,1,"",""
+"SOTMeaslesClinical","SOTMeaslesClinical.Symptoms","SOTMeaslesClinical.Symptoms","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Symptoms","Symptoms","","","","","","","","","",,,,,"",,,,"SOTMeaslesClinical.Symptoms",1,1,"",""
+"SOTMeaslesClinical","SOTMeaslesClinical.Fever","SOTMeaslesClinical.Fever","","","",1,1,"","","","Coding {[]} {[]}
+","Fever","Fever","","","","","","","","","",,,,,"",,,,"SOTMeaslesClinical.Fever",1,1,"",""
+"SOTMeaslesClinical","SOTMeaslesClinical.Rash","SOTMeaslesClinical.Rash","","","",1,1,"","","","Coding {[]} {[]}
+","Rash","Rash","","","","","","","","","",,,,,"",,,,"SOTMeaslesClinical.Rash",1,1,"",""
+"SOTMeaslesClinical","SOTMeaslesClinical.SevereComplications","SOTMeaslesClinical.SevereComplications","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Severe Complications","Severe Complications","","","","","","","","","",,,,,"",,,,"SOTMeaslesClinical.SevereComplications",0,1,"",""
+"SOTMeaslesClinical","SOTMeaslesClinical.HistoryOfHospitalization","SOTMeaslesClinical.HistoryOfHospitalization","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","History of hospitalization in 23 days prior to rash onset?","History of hospitalization in 23 days prior to rash onset?","","","","","","","","","",,,,,"",,,,"SOTMeaslesClinical.HistoryOfHospitalization",1,1,"",""
+"SOTMeaslesClinical","SOTMeaslesClinical.DatesOfHospitalization","SOTMeaslesClinical.DatesOfHospitalization","","","",0,1,"","","","date {[]} {[]}
+","Dates of hospitalization","Dates of hospitalization","","","","","","","","","",,,,,"",,,,"SOTMeaslesClinical.DatesOfHospitalization",0,1,"",""
+"SOTMeaslesClinical","SOTMeaslesClinical.HospitalizedReason","SOTMeaslesClinical.HospitalizedReason","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Hospitalized because of this current fever rash diagnosis?","Hospitalized because of this current fever rash diagnosis?","","","","","","","","","",,,,,"",,,,"SOTMeaslesClinical.HospitalizedReason",1,1,"",""
+"SOTMeaslesClinical","SOTMeaslesClinical.Outcome","SOTMeaslesClinical.Outcome","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Outcome (patient survived or died)","Outcome (patient survived or died)","","","","","","","","","",,,,,"",,,,"SOTMeaslesClinical.Outcome",1,1,"",""
+"SOTMeaslesClinical","SOTMeaslesClinical.DateOfDeath","SOTMeaslesClinical.DateOfDeath","","","",0,1,"","","","date {[]} {[]}
+","Date of death","Date of death","","","","","","","","","",,,,,"",,,,"SOTMeaslesClinical.DateOfDeath",0,1,"",""
+"SOTMeaslesClinical","SOTMeaslesClinical.NumberOfPrevious","SOTMeaslesClinical.NumberOfPrevious","","","",0,1,"","","","Quantity {[]} {[]}
+","Number of previous pregnancies*","Number of previous pregnancies*","","","","","","","","","",,,,,"",,,,"SOTMeaslesClinical.NumberOfPrevious",0,1,"",""
+"SOTMeaslesClinical","SOTMeaslesClinical.PregnancyStatus","SOTMeaslesClinical.PregnancyStatus","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Pregnancy status*","Pregnancy status*","","","","","","","","","",,,,,"",,,,"SOTMeaslesClinical.PregnancyStatus",1,1,"",""
+"SOTMeaslesClinical","SOTMeaslesClinical.GestationWeeks","SOTMeaslesClinical.GestationWeeks","","","",0,1,"","","","Quantity {[]} {[]}
+","Number of weeks gestation at onset of illness*","Number of weeks gestation at onset of illness*","","","","","","","","","",,,,,"",,,,"SOTMeaslesClinical.GestationWeeks",0,1,"",""
+"SOTMeaslesClinical","SOTMeaslesClinical.PriorEvidence","SOTMeaslesClinical.PriorEvidence","","","",0,1,"","","","string {[]} {[]}
+","Prior evidence or date of rubella serologic immunity, or both*","Prior evidence or date of rubella serologic immunity, or both*","","","","","","","","","",,,,,"",,,,"SOTMeaslesClinical.PriorEvidence",0,1,"",""
+"SOTMeaslesClinical","SOTMeaslesClinical.PreviousPregnancies","SOTMeaslesClinical.PreviousPregnancies","","","",0,1,"","","","string {[]} {[]}
+","Number and dates of previous pregnancies and location (secondadministrative level or country) of these pregnancies*","Number and dates of previous pregnancies and location (secondadministrative level or country) of these pregnancies*","","","","","","","","","",,,,,"",,,,"SOTMeaslesClinical.PreviousPregnancies",0,1,"",""
+"SOTMeaslesClinical","SOTMeaslesClinical.PregnancyOutcome","SOTMeaslesClinical.PregnancyOutcome","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Pregnancy outcome, when available*","Pregnancy outcome, when available*","","","","","","","","","",,,,,"",,,,"SOTMeaslesClinical.PregnancyOutcome",0,1,"",""
+"SOTMeaslesClinical","SOTMeaslesClinical.FeverOnsetDate","SOTMeaslesClinical.FeverOnsetDate","","","",0,1,"","","","date {[]} {[]}
+","Date of fever onset","Date of fever onset","","","","","","","","","",,,,,"",,,,"SOTMeaslesClinical.FeverOnsetDate",0,1,"",""
+"SOTMeaslesClinical","SOTMeaslesClinical.TypeOfRash","SOTMeaslesClinical.TypeOfRash","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Type of rash","Type of rash","","","","","","","","","",,,,,"",,,,"SOTMeaslesClinical.TypeOfRash",0,1,"",""
+"SOTMeaslesClinical","SOTMeaslesClinical.DurationOfRash","SOTMeaslesClinical.DurationOfRash","","","",0,1,"","","","Quantity {[]} {[]}
+","Duration of the rash in days","Duration of the rash in days","","","","","","","","","",,,,,"",,,,"SOTMeaslesClinical.DurationOfRash",0,1,"",""
+"SOTMeaslesClinical","SOTMeaslesClinical.Temperature","SOTMeaslesClinical.Temperature","","","",0,1,"","","","Quantity {[]} {[]}
+","Temperature (degree Celcius)","Temperature (degree Celcius)","","","","","","","","","",,,,,"",,,,"SOTMeaslesClinical.Temperature",0,1,"",""
+"SOTMeaslesClinical","SOTMeaslesClinical.HospitalName","SOTMeaslesClinical.HospitalName","","","",0,1,"","","","string {[]} {[]}
+","Hospital Name","Hospital Name","","","","","","","","","",,,,,"",,,,"SOTMeaslesClinical.HospitalName",0,1,"",""
+"SOTMeaslesClinical","SOTMeaslesClinical.DateOfAdmission","SOTMeaslesClinical.DateOfAdmission","","","",0,1,"","","","date {[]} {[]}
+","Date of admission","Date of admission","","","","","","","","","",,,,,"",,,,"SOTMeaslesClinical.DateOfAdmission",0,1,"",""
+"SOTMeaslesClinical","SOTMeaslesClinical.HospitalRecordNumber","SOTMeaslesClinical.HospitalRecordNumber","","","",0,1,"","","","id {[]} {[]}
+","Hospital record number","Hospital record number","","","","","","","","","",,,,,"",,,,"SOTMeaslesClinical.HospitalRecordNumber",0,1,"",""
+"SOTMeaslesClinical","SOTMeaslesClinical.PrimaryCauseOf","SOTMeaslesClinical.PrimaryCauseOf","","","",0,1,"","","","string {[]} {[]}
+","Primary cause of death","Primary cause of death","","","","","","","","","",,,,,"",,,,"SOTMeaslesClinical.PrimaryCauseOf",0,1,"",""
+"SOTMeaslesClinical","SOTMeaslesClinical.IntentedBirthPlacce","SOTMeaslesClinical.IntentedBirthPlacce","","","",0,1,"","","","string {[]} {[]}
+","Place where birth will likely take placed","Place where birth will likely take placed","","","","","","","","","",,,,,"",,,,"SOTMeaslesClinical.IntentedBirthPlacce",0,1,"",""
+"SOTMeaslesClinical","SOTMeaslesClinical.Comments","SOTMeaslesClinical.Comments","","","",0,1,"","","","string {[]} {[]}
+","Comments","Comments","","","","","","","","","",,,,,"",,,,"SOTMeaslesClinical.Comments",0,1,"",""
+"SOTT1NotificationInterview","SOTMeaslesT1NotificationInterview","SOTMeaslesT1NotificationInterview","","","",0,*,"","","","null {[]} {[]}
+","Surveillance & Outbreak Toolkit T1  Notification Interview","Base definition for all elements that are defined inside a resource - but not those in a data type.","","","","","","","","","",,,,,"",,,,"BackboneElement",0,*,"ele-1
+",""
+"SOTT1NotificationInterview","SOTMeaslesT1NotificationInterview.id","SOTMeaslesT1NotificationInterview.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"SOTT1NotificationInterview","SOTMeaslesT1NotificationInterview.extension","SOTMeaslesT1NotificationInterview.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"SOTT1NotificationInterview","SOTMeaslesT1NotificationInterview.modifierExtension","SOTMeaslesT1NotificationInterview.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"SOTT1NotificationInterview","SOTMeaslesT1NotificationInterview.PlaceOfReporting","SOTMeaslesT1NotificationInterview.PlaceOfReporting","","","",1,1,"","","","Address {[]} {[]}
+","Place of reporting","Place of reporting (for example, county or district)","","","","","","","","","",,,,,"",,,,"SOTMeaslesT1NotificationInterview.PlaceOfReporting",1,1,"",""
+"SOTT1NotificationInterview","SOTMeaslesT1NotificationInterview.DateOfNotification","SOTMeaslesT1NotificationInterview.DateOfNotification","","","",1,1,"","","","date {[]} {[]}
+","Date of notification","Date of notification","","","","","","","","","",,,,,"",,,,"SOTMeaslesT1NotificationInterview.DateOfNotification",1,1,"",""
+"SOTT1NotificationInterview","SOTMeaslesT1NotificationInterview.DateOfInvestigation","SOTMeaslesT1NotificationInterview.DateOfInvestigation","","","",1,1,"","","","date {[]} {[]}
+","Date of investigation","Date of investigation","","","","","","","","","",,,,,"",,,,"SOTMeaslesT1NotificationInterview.DateOfInvestigation",1,1,"",""
+"SOTT1NotificationInterview","SOTMeaslesT1NotificationInterview.ReportedBy","SOTMeaslesT1NotificationInterview.ReportedBy","","","",1,1,"","","","string {[]} {[]}
+","Reported by","Name of clinician who supects measles (or rubella)","","","","","","","","","",,,,,"",,,,"SOTMeaslesT1NotificationInterview.ReportedBy",1,1,"",""
+"SOTT1NotificationInterview","SOTMeaslesT1NotificationInterview.HealthServiceName","SOTMeaslesT1NotificationInterview.HealthServiceName","","","",1,1,"","","","string {[]} {[]}
+","Health service name","Health service name","","","","","","","","","",,,,,"",,,,"SOTMeaslesT1NotificationInterview.HealthServiceName",1,1,"",""
+"SOTT1NotificationInterview","SOTMeaslesT1NotificationInterview.HealthServiceTelephone","SOTMeaslesT1NotificationInterview.HealthServiceTelephone","","","",1,*,"","","","ContactPoint {[]} {[]}
+","Health service telephone","Health service telephone","","","","","","","","","",,,,,"",,,,"SOTMeaslesT1NotificationInterview.HealthServiceTelephone",1,*,"",""
+"SOTT1NotificationInterview","SOTMeaslesT1NotificationInterview.DateOfConsultation","SOTMeaslesT1NotificationInterview.DateOfConsultation","","","",0,1,"","","","date {[]} {[]}
+","Date of consultation","Date of consultation","","","","","","","","","",,,,,"",,,,"SOTMeaslesT1NotificationInterview.DateOfConsultation",0,1,"",""
+"SOTT1NotificationInterview","SOTMeaslesT1NotificationInterview.DateOfHomeVisit","SOTMeaslesT1NotificationInterview.DateOfHomeVisit","","","",0,1,"","","","date {[]} {[]}
+","Date of home visit","Date of home visit","","","","","","","","","",,,,,"",,,,"SOTMeaslesT1NotificationInterview.DateOfHomeVisit",0,1,"",""
+"SOTT1NotificationInterview","SOTMeaslesT1NotificationInterview.DateReportedLocal","SOTMeaslesT1NotificationInterview.DateReportedLocal","","","",0,1,"","","","date {[]} {[]}
+","DateReported, Local","DateReported, Local","","","","","","","","","",,,,,"",,,,"SOTMeaslesT1NotificationInterview.DateReportedLocal",0,1,"",""
+"SOTT1NotificationInterview","SOTMeaslesT1NotificationInterview.DateReportedNational","SOTMeaslesT1NotificationInterview.DateReportedNational","","","",0,1,"","","","date {[]} {[]}
+","DateReported, National","DateReported, National","","","","","","","","","",,,,,"",,,,"SOTMeaslesT1NotificationInterview.DateReportedNational",0,1,"",""
+"SOTT1NotificationInterview","SOTMeaslesT1NotificationInterview.DetectedBy","SOTMeaslesT1NotificationInterview.DetectedBy","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Detected By","Detected By","","","","","","","","","",,,,,"",,,,"SOTMeaslesT1NotificationInterview.DetectedBy",1,1,"",""
+"SOTT1NotificationInterview","SOTMeaslesT1NotificationInterview.TypeOfProviderReporting","SOTMeaslesT1NotificationInterview.TypeOfProviderReporting","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Type Of Provider Reporting","Type Of Provider Reporting","","","","","","","","","",,,,,"",,,,"SOTMeaslesT1NotificationInterview.TypeOfProviderReporting",1,1,"",""
+"SOTT1NotificationInterview","SOTMeaslesT1NotificationInterview.InitialDiagnosis","SOTMeaslesT1NotificationInterview.InitialDiagnosis","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Initial Diagnosis","Initial Diagnosis","","","","","","","","","",,,,,"",,,,"SOTMeaslesT1NotificationInterview.InitialDiagnosis",0,1,"",""
+"SOTMeaslesVaccinationStatus","SOTMeaslesVaccinationStatus","SOTMeaslesVaccinationStatus","","","",0,*,"","","","null {[]} {[]}
+","Surveillance & Outbreak Toolkit Measles- Vaccination Statuss","Base definition for all elements that are defined inside a resource - but not those in a data type.","","","","","","","","","",,,,,"",,,,"BackboneElement",0,*,"ele-1
+",""
+"SOTMeaslesVaccinationStatus","SOTMeaslesVaccinationStatus.id","SOTMeaslesVaccinationStatus.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"SOTMeaslesVaccinationStatus","SOTMeaslesVaccinationStatus.extension","SOTMeaslesVaccinationStatus.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"SOTMeaslesVaccinationStatus","SOTMeaslesVaccinationStatus.modifierExtension","SOTMeaslesVaccinationStatus.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"SOTMeaslesVaccinationStatus","SOTMeaslesVaccinationStatus.VaccineType","SOTMeaslesVaccinationStatus.VaccineType","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Type of Vaccine","Type of Vaccine","","","","","","","","","",,,,,"",,,,"SOTMeaslesVaccinationStatus.VaccineType",1,1,"",""
+"SOTMeaslesVaccinationStatus","SOTMeaslesVaccinationStatus.NumberOfDoses","SOTMeaslesVaccinationStatus.NumberOfDoses","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Number of doses received","Number of doses received","","","","","","","","","",,,,,"",,,,"SOTMeaslesVaccinationStatus.NumberOfDoses",1,1,"",""
+"SOTMeaslesVaccinationStatus","SOTMeaslesVaccinationStatus.Source","SOTMeaslesVaccinationStatus.Source","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Source of vaccination information","Source of vaccination information","","","","","","","","","",,,,,"",,,,"SOTMeaslesVaccinationStatus.Source",1,1,"",""
+"SOTT1Laboratory","SOTT1Laboratory","SOTT1Laboratory","","","",0,*,"","","","null {[]} {[]}
+","Surveillance & Outbreak Toolkit T1 - Laboratory","Base definition for all elements that are defined inside a resource - but not those in a data type.","","","","","","","","","",,,,,"",,,,"BackboneElement",0,*,"ele-1
+",""
+"SOTT1Laboratory","SOTT1Laboratory.id","SOTT1Laboratory.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"SOTT1Laboratory","SOTT1Laboratory.extension","SOTT1Laboratory.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"SOTT1Laboratory","SOTT1Laboratory.modifierExtension","SOTT1Laboratory.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"SOTT1Laboratory","SOTT1Laboratory.SpecimenCollectionDate","SOTT1Laboratory.SpecimenCollectionDate","","","",1,1,"","","","date {[]} {[]}
+","Date of specimen(s) collection","Date of specimen(s) collection","","","","","","","","","",,,,,"",,,,"SOTT1Laboratory.SpecimenCollectionDate",1,1,"",""
+"SOTT1Laboratory","SOTT1Laboratory.SpecimenSentDate","SOTT1Laboratory.SpecimenSentDate","","","",0,1,"","","","date {[]} {[]}
+","Date specimen(s) sent to laboratory","Date specimen(s) sent to laboratory","","","","","","","","","",,,,,"",,,,"SOTT1Laboratory.SpecimenSentDate",0,1,"",""
+"SOTT1Laboratory","SOTT1Laboratory.SpecimenRecdDate","SOTT1Laboratory.SpecimenRecdDate","","","",0,1,"","","","date {[]} {[]}
+","Date specimen(s) received in laboratory","Date specimen(s) received in laboratory","","","","","","","","","",,,,,"",,,,"SOTT1Laboratory.SpecimenRecdDate",0,1,"",""
+"SOTT1Laboratory","SOTT1Laboratory.LabResultsDate","SOTT1Laboratory.LabResultsDate","","","",0,1,"","","","date {[]} {[]}
+","Date of results from laboratory","Date of results from laboratory","","","","","","","","","",,,,,"",,,,"SOTT1Laboratory.LabResultsDate",0,1,"",""
+"SOTT1Laboratory","SOTT1Laboratory.LabResults","SOTT1Laboratory.LabResults","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Laboratory results (serology, viral detection,genotype)","Laboratory results (serology, viral detection,genotype)","","","","","","","","","",,,,,"",,,,"SOTT1Laboratory.LabResults",0,1,"",""
+"SOTT1Laboratory","SOTT1Laboratory.TypeOfTest","SOTT1Laboratory.TypeOfTest","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Type of test","Type of test","","","","","","","","","",,,,,"",,,,"SOTT1Laboratory.TypeOfTest",0,1,"",""
+"SOTT1Laboratory","SOTT1Laboratory.Antigen","SOTT1Laboratory.Antigen","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Antigen","Antigen","","","","","","","","","",,,,,"",,,,"SOTT1Laboratory.Antigen",0,1,"",""
+"SOTT1Laboratory","SOTT1Laboratory.SpecimenNumber","SOTT1Laboratory.SpecimenNumber","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Specimen number","Specimen number","","","","","","","","","",,,,,"",,,,"SOTT1Laboratory.SpecimenNumber",0,1,"",""
+"SOTT1Laboratory","SOTT1Laboratory.ViralGenotype","SOTT1Laboratory.ViralGenotype","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Viral Genotype, if detected","Viral Genotype, if detected","","","","","","","","","",,,,,"",,,,"SOTT1Laboratory.ViralGenotype",0,1,"",""
+"SOTT1CaseInfo","SOTT1CaseInfo","SOTT1CaseInfo","","","",0,*,"","","","null {[]} {[]}
+","Surveillance & Outbreak Toolkit T1  Case Information","Base definition for all elements that are defined inside a resource - but not those in a data type.","","","","","","","","","",,,,,"",,,,"BackboneElement",0,*,"ele-1
+",""
+"SOTT1CaseInfo","SOTT1CaseInfo.id","SOTT1CaseInfo.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"SOTT1CaseInfo","SOTT1CaseInfo.extension","SOTT1CaseInfo.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"SOTT1CaseInfo","SOTT1CaseInfo.modifierExtension","SOTT1CaseInfo.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"SOTT1CaseInfo","SOTT1CaseInfo.identification","SOTT1CaseInfo.identification","","","",1,1,"","","","BackboneElement {[]} {[]}
+","Identification","Identification","","","","","","","","","",,,,,"",,,,"SOTT1CaseInfo.identification",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"SOTT1CaseInfo","SOTT1CaseInfo.identification.id","SOTT1CaseInfo.identification.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"SOTT1CaseInfo","SOTT1CaseInfo.identification.extension","SOTT1CaseInfo.identification.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"SOTT1CaseInfo","SOTT1CaseInfo.identification.modifierExtension","SOTT1CaseInfo.identification.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"SOTT1CaseInfo","SOTT1CaseInfo.identification.name","SOTT1CaseInfo.identification.name","","","",1,1,"","","","HumanName {[]} {[]}
+","Full name of the patient*:","full name of the case (sick person)","","","","","","","","","",,,,,"",,,,"SOTT1CaseInfo.identification.name",1,1,"",""
+"SOTT1CaseInfo","SOTT1CaseInfo.identification.telephone","SOTT1CaseInfo.identification.telephone","","","",0,1,"","","","ContactPoint {[]} {[]}
+","Telephone number:","telephone number of the patient or of the close parent","","","","","","","","","",,,,,"",,,,"SOTT1CaseInfo.identification.telephone",0,1,"",""
+"SOTT1CaseInfo","SOTT1CaseInfo.demographic","SOTT1CaseInfo.demographic","","","",1,1,"","","","BackboneElement {[]} {[]}
+","Demographics","Demographics","","","","","","","","","",,,,,"",,,,"SOTT1CaseInfo.demographic",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"SOTT1CaseInfo","SOTT1CaseInfo.demographic.id","SOTT1CaseInfo.demographic.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"SOTT1CaseInfo","SOTT1CaseInfo.demographic.extension","SOTT1CaseInfo.demographic.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"SOTT1CaseInfo","SOTT1CaseInfo.demographic.modifierExtension","SOTT1CaseInfo.demographic.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"SOTT1CaseInfo","SOTT1CaseInfo.demographic.guardian","SOTT1CaseInfo.demographic.guardian","","","",0,1,"","","","HumanName {[]} {[]}
+","If a child, first and last name of father/mother/guardian:","If a child, first and last name of father/mother/guardian","","","","","","","","","",,,,,"",,,,"SOTT1CaseInfo.demographic.guardian",0,1,"",""
+"SOTT1CaseInfo","SOTT1CaseInfo.demographic.DoB","SOTT1CaseInfo.demographic.DoB","","","",1,1,"","","","date {[]} {[]}
+","Date of birth*:_____/______/________","Date that the case was born on.","","","","","","","","","",,,,,"",,,,"SOTT1CaseInfo.demographic.DoB",1,1,"",""
+"SOTT1CaseInfo","SOTT1CaseInfo.demographic.ageOnset","SOTT1CaseInfo.demographic.ageOnset","","","",1,1,"","","","Age {[]} {[]}
+","or Age*:_______ with units","Age in years on the date of illness onset with units","","","","","","","","","",,,,,"",,,,"SOTT1CaseInfo.demographic.ageOnset",1,1,"",""
+"SOTT1CaseInfo","SOTT1CaseInfo.demographic.sex","SOTT1CaseInfo.demographic.sex","","","",1,1,"","","","code {[]} {[]}
+","Sex at birth*: Male Female","Biological sex. That is the biological differential characteristics (chromosomes, hormonal profiles, internal and external sex organs) that best describes the case.","","","","","","","","","",,,,,"",,,,"SOTT1CaseInfo.demographic.sex",1,1,"",""
+"SOTT1CaseInfo","SOTT1CaseInfo.demographic.nationality","SOTT1CaseInfo.demographic.nationality","","","",0,1,"","","","string {[]} {[]}
+","Nationality:","The nation/country the case identifies as belonging to, whether by birth or naturalization.","","","","","","","","","",,,,,"",,,,"SOTT1CaseInfo.demographic.nationality",0,1,"",""
+"SOTT1CaseInfo","SOTT1CaseInfo.geographic","SOTT1CaseInfo.geographic","","","",1,1,"","","","BackboneElement {[]} {[]}
+","Geographic","Geographic","","","","","","","","","",,,,,"",,,,"SOTT1CaseInfo.geographic",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"SOTT1CaseInfo","SOTT1CaseInfo.geographic.id","SOTT1CaseInfo.geographic.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"SOTT1CaseInfo","SOTT1CaseInfo.geographic.extension","SOTT1CaseInfo.geographic.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"SOTT1CaseInfo","SOTT1CaseInfo.geographic.modifierExtension","SOTT1CaseInfo.geographic.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"SOTT1CaseInfo","SOTT1CaseInfo.geographic.locationResStatus","SOTT1CaseInfo.geographic.locationResStatus","","","",0,1,"","","","Coding {[]} {[]}
+","Residential status: Resident/Refugee/Displaced person","Is the case residing in this area or is he/she a refugee or a displaced person","","","","","","","","","",,,,,"",,,,"SOTT1CaseInfo.geographic.locationResStatus",0,1,"",""
+"SOTT1CaseInfo","SOTT1CaseInfo.geographic.locationLivingIn","SOTT1CaseInfo.geographic.locationLivingIn","","","",0,1,"","","","Coding {[]} {[]}
+","Living in: camp/settlement/rural/urban","Neighbourhood/camp/settlement/suburb where the case currently/usually resides.","","","","","","","","","",,,,,"",,,,"SOTT1CaseInfo.geographic.locationLivingIn",0,1,"",""
+"SOTT1CaseInfo","SOTT1CaseInfo.geographic.address","SOTT1CaseInfo.geographic.address","","","",1,1,"","","","string {[]} {[]}
+","Residential/street address*:","Address (household number/identifiers, street name, block, etc.) where the case currently/usually resides.","","","","","","","","","",,,,,"",,,,"SOTT1CaseInfo.geographic.address",1,1,"",""
+"SOTT1CaseInfo","SOTT1CaseInfo.geographic.landmark","SOTT1CaseInfo.geographic.landmark","","","",0,1,"","","","string {[]} {[]}
+","Landmarks to locate the house:","Landmarks, easy to recognize object or feature of a landscape or town that enables one establish a location of the case's current/usual place of residence.","","","","","","","","","",,,,,"",,,,"SOTT1CaseInfo.geographic.landmark",0,1,"",""
+"SOTT1CaseInfo","SOTT1CaseInfo.geographic.city","SOTT1CaseInfo.geographic.city","","","",1,1,"","","","string {[]} {[]}
+","Village/Town/City:","Town/city where the case currently/usually resides.","","","","","","","","","",,,,,"",,,,"SOTT1CaseInfo.geographic.city",1,1,"",""
+"SOTT1CaseInfo","SOTT1CaseInfo.geographic.admin1","SOTT1CaseInfo.geographic.admin1","","","",1,1,"","","","string {[]} {[]}
+","Admin Level 1* (province):","Administrative level 1: First sub-national boundary (e.g. province, state, territory prefecture, region, etc.) within which the case's currently/usually resides.","","","","","","","","","",,,,,"",,,,"SOTT1CaseInfo.geographic.admin1",1,1,"",""
+"SOTT1CaseInfo","SOTT1CaseInfo.geographic.admin2","SOTT1CaseInfo.geographic.admin2","","","",1,1,"","","","string {[]} {[]}
+","Admin Level 2*(district):","Administrative level 2: Second sub-national level boundary (e.g. district, county, local government area, department, province, municipality, etc.) within which the case's currently/usually resides.","","","","","","","","","",,,,,"",,,,"SOTT1CaseInfo.geographic.admin2",1,1,"",""
+"SOTT1CaseInfo","SOTT1CaseInfo.geographic.admin3","SOTT1CaseInfo.geographic.admin3","","","",1,1,"","","","string {[]} {[]}
+","Admin Level 3*(commune):","Administrative level 3: Third sub-national level boundary (e.g. sub-district, commune, zone, municipality, etc.) within which the case's currently/usually resides.","","","","","","","","","",,,,,"",,,,"SOTT1CaseInfo.geographic.admin3",1,1,"",""
+"SOTT1CaseInfo","SOTT1CaseInfo.geographic.admin4","SOTT1CaseInfo.geographic.admin4","","","",1,1,"","","","string {[]} {[]}
+","Admin Level 4*(ward, parish):","Administrative level 4: Forth sub-national level boundary (e.g. community, ward, parish, commune, etc.) within which the case currently/usually resides.","","","","","","","","","",,,,,"",,,,"SOTT1CaseInfo.geographic.admin4",1,1,"",""
+"SOTT1CaseInfo","SOTT1CaseInfo.geographic.latitude","SOTT1CaseInfo.geographic.latitude","","","",0,1,"","","","decimal {[]} {[]}
+","GPS residence latitude:","Latitude where the case currently/usually resides, preferably expressed as decimal degrees. Latitude is the geographic coordinates that specifies the north-south position of a point on the Earth's surface, usually obtained using a global position system (GPS) enabled device (e.g. smart phone) or a web mapping application (e.g. Open Street Map, Google Maps, etc.).","","","","","","","","","",,,,,"",,,,"SOTT1CaseInfo.geographic.latitude",0,1,"",""
+"SOTT1CaseInfo","SOTT1CaseInfo.geographic.longitude","SOTT1CaseInfo.geographic.longitude","","","",0,1,"","","","decimal {[]} {[]}
+","GPS residence longitude:","Longitude where the case currently/usually resides, preferably expressed as decimal degrees. Longitude is the geographic coordinates that specifies the east-west position of a point on the Earth's surface, usually obtained using a global position system (GPS) enabled device (e.g. smart phone) or a web mapping application (e.g. Open Street Map, Google Maps, etc.).","","","","","","","","","",,,,,"",,,,"SOTT1CaseInfo.geographic.longitude",0,1,"",""
+"SOTT1CaseInfo","SOTT1CaseInfo.occupation","SOTT1CaseInfo.occupation","","","",0,1,"","","","BackboneElement {[]} {[]}
+","Occupation","Occupation","","","","","","","","","",,,,,"",,,,"SOTT1CaseInfo.occupation",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"SOTT1CaseInfo","SOTT1CaseInfo.occupation.id","SOTT1CaseInfo.occupation.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"SOTT1CaseInfo","SOTT1CaseInfo.occupation.extension","SOTT1CaseInfo.occupation.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"SOTT1CaseInfo","SOTT1CaseInfo.occupation.modifierExtension","SOTT1CaseInfo.occupation.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"SOTT1CaseInfo","SOTT1CaseInfo.occupation.occupation","SOTT1CaseInfo.occupation.occupation","","","",0,1,"","","","string {[]} {[]}
+","Occupation","Primary occupation, profession, type of employment, vocation include voluntary/unpaid work and studies. Categories to be pre-defined based on known risk factors for disease.","","","","","","","","","",,,,,"",,,,"SOTT1CaseInfo.occupation.occupation",0,1,"",""
+"SOTT1CaseInfo","SOTT1CaseInfo.occupation.HCWFacilityName","SOTT1CaseInfo.occupation.HCWFacilityName","","","",0,1,"","","","string {[]} {[]}
+","If working in a health facility, specify name:","Name(s) of health facility(ies) where the case works/volunteers.","","","","","","","","","",,,,,"",,,,"SOTT1CaseInfo.occupation.HCWFacilityName",0,1,"",""
+"SOTT1CaseInfo","SOTT1CaseInfo.occupation.HCWFunction","SOTT1CaseInfo.occupation.HCWFunction","","","",0,1,"","","","string {[]} {[]}
+","If working in a health facility, specify function/position:","Describe the function or position of the case working in this health facility (for instance; nurse, doctor, cleaner, guard, etc)","","","","","","","","","",,,,,"",,,,"SOTT1CaseInfo.occupation.HCWFunction",0,1,"",""
+"SOTT1CaseInfo","SOTT1CaseInfo.occupation.HCWActivities","SOTT1CaseInfo.occupation.HCWActivities","","","",0,1,"","","","string {[]} {[]}
+","List routine activities (outside working hours):","What does the case normally do routinely outside working hours","","","","","","","","","",,,,,"",,,,"SOTT1CaseInfo.occupation.HCWActivities",0,1,"",""
+"SOTMeaslesLaboratoryResults","SOTMeaslesLaboratoryResults","SOTMeaslesLaboratoryResults","","","",0,*,"","","","null {[]} {[]}
+","Surveillance & Outbreak Toolkit Measles- Laboratory Resultss","Base definition for all elements that are defined inside a resource - but not those in a data type.","","","","","","","","","",,,,,"",,,,"BackboneElement",0,*,"ele-1
+",""
+"SOTMeaslesLaboratoryResults","SOTMeaslesLaboratoryResults.id","SOTMeaslesLaboratoryResults.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"SOTMeaslesLaboratoryResults","SOTMeaslesLaboratoryResults.extension","SOTMeaslesLaboratoryResults.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"SOTMeaslesLaboratoryResults","SOTMeaslesLaboratoryResults.modifierExtension","SOTMeaslesLaboratoryResults.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"SOTMeaslesLaboratoryResults","SOTMeaslesLaboratoryResults.SpecimenCollectionDate","SOTMeaslesLaboratoryResults.SpecimenCollectionDate","","","",1,1,"","","","date {[]} {[]}
+","Date of specimen(s) collection","Date of specimen(s) collection","","","","","","","","","",,,,,"",,,,"SOTMeaslesLaboratoryResults.SpecimenCollectionDate",1,1,"",""
+"SOTMeaslesLaboratoryResults","SOTMeaslesLaboratoryResults.SpecimenSentDate","SOTMeaslesLaboratoryResults.SpecimenSentDate","","","",0,1,"","","","date {[]} {[]}
+","Date specimen(s) sent to laboratory","Date specimen(s) sent to laboratory","","","","","","","","","",,,,,"",,,,"SOTMeaslesLaboratoryResults.SpecimenSentDate",0,1,"",""
+"SOTMeaslesLaboratoryResults","SOTMeaslesLaboratoryResults.SpecimenRecdDate","SOTMeaslesLaboratoryResults.SpecimenRecdDate","","","",0,1,"","","","date {[]} {[]}
+","Date specimen(s) received in laboratory","Date specimen(s) received in laboratory","","","","","","","","","",,,,,"",,,,"SOTMeaslesLaboratoryResults.SpecimenRecdDate",0,1,"",""
+"SOTMeaslesLaboratoryResults","SOTMeaslesLaboratoryResults.LabResultsDate","SOTMeaslesLaboratoryResults.LabResultsDate","","","",0,1,"","","","date {[]} {[]}
+","Date of results from laboratory","Date of results from laboratory","","","","","","","","","",,,,,"",,,,"SOTMeaslesLaboratoryResults.LabResultsDate",0,1,"",""
+"SOTMeaslesLaboratoryResults","SOTMeaslesLaboratoryResults.LabResults","SOTMeaslesLaboratoryResults.LabResults","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Laboratory results (serology, viral detection,genotype)","Laboratory results (serology, viral detection,genotype)","","","","","","","","","",,,,,"",,,,"SOTMeaslesLaboratoryResults.LabResults",0,1,"",""
+"SOTMeaslesLaboratoryResults","SOTMeaslesLaboratoryResults.TypeOfTest","SOTMeaslesLaboratoryResults.TypeOfTest","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Type of test","Type of test","","","","","","","","","",,,,,"",,,,"SOTMeaslesLaboratoryResults.TypeOfTest",0,1,"",""
+"SOTMeaslesLaboratoryResults","SOTMeaslesLaboratoryResults.Antigen","SOTMeaslesLaboratoryResults.Antigen","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Antigen","Antigen","","","","","","","","","",,,,,"",,,,"SOTMeaslesLaboratoryResults.Antigen",0,1,"",""
+"SOTMeaslesLaboratoryResults","SOTMeaslesLaboratoryResults.SpecimenNumber","SOTMeaslesLaboratoryResults.SpecimenNumber","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Specimen number","Specimen number","","","","","","","","","",,,,,"",,,,"SOTMeaslesLaboratoryResults.SpecimenNumber",0,1,"",""
+"SOTMeaslesLaboratoryResults","SOTMeaslesLaboratoryResults.ViralGenotype","SOTMeaslesLaboratoryResults.ViralGenotype","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Viral Genotype, if detected","Viral Genotype, if detected","","","","","","","","","",,,,,"",,,,"SOTMeaslesLaboratoryResults.ViralGenotype",0,1,"",""
+"SOTT1","SOTT1","SOTT1","","","",0,*,"","","","null {[]} {[]}
+","Surveillance & Outbreak Toolkit T1","Base definition for all elements that are defined inside a resource - but not those in a data type.","","","","","","","","","",,,,,"",,,,"BackboneElement",0,*,"ele-1
+",""
+"SOTT1","SOTT1.id","SOTT1.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"SOTT1","SOTT1.extension","SOTT1.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"SOTT1","SOTT1.modifierExtension","SOTT1.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"SOTT1","SOTT1.NotificationInterview","SOTT1.NotificationInterview","","","",1,1,"","","","http://ritikarawlani.github.io/smart-outbreak-measles/StructureDefinition/SOTMeaslesT1NotificationInterview {[]} {[]}
+","Interview","Interview","","","","","","","","","",,,,,"",,,,"SOTT1.NotificationInterview",1,1,"",""
+"SOTT1","SOTT1.CaseInfo","SOTT1.CaseInfo","","","",1,1,"","","","http://ritikarawlani.github.io/smart-outbreak-measles/StructureDefinition/SOTT1CaseInfo {[]} {[]}
+","Identification","Identification","","","","","","","","","",,,,,"",,,,"SOTT1.CaseInfo",1,1,"",""
+"SOTT1","SOTT1.Clinical","SOTT1.Clinical","","","",1,1,"","","","http://ritikarawlani.github.io/smart-outbreak-measles/StructureDefinition/SOTT1CaseInfo {[]} {[]}
+","Clinical","Clinical","","","","","","","","","",,,,,"",,,,"SOTT1.Clinical",1,1,"",""
+"SOTT1","SOTT1.Exposures","SOTT1.Exposures","","","",1,1,"","","","http://ritikarawlani.github.io/smart-outbreak-measles/StructureDefinition/SOTMeaslesT1Exposure {[]} {[]}
+","Exposures","Exposures","","","","","","","","","",,,,,"",,,,"SOTT1.Exposures",1,1,"",""
+"SOTT1","SOTT1.Laboratory","SOTT1.Laboratory","","","",1,1,"","","","http://ritikarawlani.github.io/smart-outbreak-measles/StructureDefinition/SOTT1Laboratory {[]} {[]}
+","Laboratory","Laboratory","","","","","","","","","",,,,,"",,,,"SOTT1.Laboratory",1,1,"",""
+"SOTT1","SOTT1.Conclusion","SOTT1.Conclusion","","","",1,1,"","","","http://ritikarawlani.github.io/smart-outbreak-measles/StructureDefinition/SOTT1Conclusion {[]} {[]}
+","Conclusion","Conclusion","","","","","","","","","",,,,,"",,,,"SOTT1.Conclusion",1,1,"",""
+"SOTT1Clinical","SOTT1Clinical","SOTT1Clinical","","","",0,*,"","","","null {[]} {[]}
+","Surveillance & Outbreak Toolkit T1 Clinical","Base definition for all elements that are defined inside a resource - but not those in a data type.","","","","","","","","","",,,,,"",,,,"BackboneElement",0,*,"ele-1
+",""
+"SOTT1Clinical","SOTT1Clinical.id","SOTT1Clinical.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"SOTT1Clinical","SOTT1Clinical.extension","SOTT1Clinical.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"SOTT1Clinical","SOTT1Clinical.modifierExtension","SOTT1Clinical.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"SOTT1Clinical","SOTT1Clinical.RashOnsetDate","SOTT1Clinical.RashOnsetDate","","","",0,1,"","","","date {[]} {[]}
+","Date of rash onset","Date of rash onset","","","","","","","","","",,,,,"",,,,"SOTT1Clinical.RashOnsetDate",0,1,"",""
+"SOTT1Clinical","SOTT1Clinical.Symptoms","SOTT1Clinical.Symptoms","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Symptoms","Symptoms","","","","","","","","","",,,,,"",,,,"SOTT1Clinical.Symptoms",1,1,"",""
+"SOTT1Clinical","SOTT1Clinical.Fever","SOTT1Clinical.Fever","","","",1,1,"","","","Coding {[]} {[]}
+","Fever","Fever","","","","","","","","","",,,,,"",,,,"SOTT1Clinical.Fever",1,1,"",""
+"SOTT1Clinical","SOTT1Clinical.Rash","SOTT1Clinical.Rash","","","",1,1,"","","","Coding {[]} {[]}
+","Rash","Rash","","","","","","","","","",,,,,"",,,,"SOTT1Clinical.Rash",1,1,"",""
+"SOTT1Clinical","SOTT1Clinical.SevereComplications","SOTT1Clinical.SevereComplications","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Severe Complications","Severe Complications","","","","","","","","","",,,,,"",,,,"SOTT1Clinical.SevereComplications",0,1,"",""
+"SOTT1Clinical","SOTT1Clinical.HistoryOfHospitalization","SOTT1Clinical.HistoryOfHospitalization","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","History of hospitalization in 23 days prior to rash onset?","History of hospitalization in 23 days prior to rash onset?","","","","","","","","","",,,,,"",,,,"SOTT1Clinical.HistoryOfHospitalization",1,1,"",""
+"SOTT1Clinical","SOTT1Clinical.DatesOfHospitalization","SOTT1Clinical.DatesOfHospitalization","","","",0,1,"","","","date {[]} {[]}
+","Dates of hospitalization","Dates of hospitalization","","","","","","","","","",,,,,"",,,,"SOTT1Clinical.DatesOfHospitalization",0,1,"",""
+"SOTT1Clinical","SOTT1Clinical.HospitalizedReason","SOTT1Clinical.HospitalizedReason","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Hospitalized because of this current fever rash diagnosis?","Hospitalized because of this current fever rash diagnosis?","","","","","","","","","",,,,,"",,,,"SOTT1Clinical.HospitalizedReason",1,1,"",""
+"SOTT1Clinical","SOTT1Clinical.Outcome","SOTT1Clinical.Outcome","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Outcome (patient survived or died)","Outcome (patient survived or died)","","","","","","","","","",,,,,"",,,,"SOTT1Clinical.Outcome",1,1,"",""
+"SOTT1Clinical","SOTT1Clinical.DateOfDeath","SOTT1Clinical.DateOfDeath","","","",0,1,"","","","date {[]} {[]}
+","Date of death","Date of death","","","","","","","","","",,,,,"",,,,"SOTT1Clinical.DateOfDeath",0,1,"",""
+"SOTT1Clinical","SOTT1Clinical.NumberOfPrevious","SOTT1Clinical.NumberOfPrevious","","","",0,1,"","","","Quantity {[]} {[]}
+","Number of previous pregnancies*","Number of previous pregnancies*","","","","","","","","","",,,,,"",,,,"SOTT1Clinical.NumberOfPrevious",0,1,"",""
+"SOTT1Clinical","SOTT1Clinical.PregnancyStatus","SOTT1Clinical.PregnancyStatus","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Pregnancy status*","Pregnancy status*","","","","","","","","","",,,,,"",,,,"SOTT1Clinical.PregnancyStatus",1,1,"",""
+"SOTT1Clinical","SOTT1Clinical.GestationWeeks","SOTT1Clinical.GestationWeeks","","","",0,1,"","","","Quantity {[]} {[]}
+","Number of weeks gestation at onset of illness*","Number of weeks gestation at onset of illness*","","","","","","","","","",,,,,"",,,,"SOTT1Clinical.GestationWeeks",0,1,"",""
+"SOTT1Clinical","SOTT1Clinical.PriorEvidence","SOTT1Clinical.PriorEvidence","","","",0,1,"","","","string {[]} {[]}
+","Prior evidence or date of rubella serologic immunity, or both*","Prior evidence or date of rubella serologic immunity, or both*","","","","","","","","","",,,,,"",,,,"SOTT1Clinical.PriorEvidence",0,1,"",""
+"SOTT1Clinical","SOTT1Clinical.PreviousPregnancies","SOTT1Clinical.PreviousPregnancies","","","",0,1,"","","","string {[]} {[]}
+","Number and dates of previous pregnancies and location (secondadministrative level or country) of these pregnancies*","Number and dates of previous pregnancies and location (secondadministrative level or country) of these pregnancies*","","","","","","","","","",,,,,"",,,,"SOTT1Clinical.PreviousPregnancies",0,1,"",""
+"SOTT1Clinical","SOTT1Clinical.PregnancyOutcome","SOTT1Clinical.PregnancyOutcome","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Pregnancy outcome, when available*","Pregnancy outcome, when available*","","","","","","","","","",,,,,"",,,,"SOTT1Clinical.PregnancyOutcome",0,1,"",""
+"SOTT1Clinical","SOTT1Clinical.FeverOnsetDate","SOTT1Clinical.FeverOnsetDate","","","",0,1,"","","","date {[]} {[]}
+","Date of fever onset","Date of fever onset","","","","","","","","","",,,,,"",,,,"SOTT1Clinical.FeverOnsetDate",0,1,"",""
+"SOTT1Clinical","SOTT1Clinical.TypeOfRash","SOTT1Clinical.TypeOfRash","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Type of rash","Type of rash","","","","","","","","","",,,,,"",,,,"SOTT1Clinical.TypeOfRash",0,1,"",""
+"SOTT1Clinical","SOTT1Clinical.DurationOfRash","SOTT1Clinical.DurationOfRash","","","",0,1,"","","","Quantity {[]} {[]}
+","Duration of the rash in days","Duration of the rash in days","","","","","","","","","",,,,,"",,,,"SOTT1Clinical.DurationOfRash",0,1,"",""
+"SOTT1Clinical","SOTT1Clinical.Temperature","SOTT1Clinical.Temperature","","","",0,1,"","","","Quantity {[]} {[]}
+","Temperature (degree Celcius)","Temperature (degree Celcius)","","","","","","","","","",,,,,"",,,,"SOTT1Clinical.Temperature",0,1,"",""
+"SOTT1Clinical","SOTT1Clinical.HospitalName","SOTT1Clinical.HospitalName","","","",0,1,"","","","string {[]} {[]}
+","Hospital Name","Hospital Name","","","","","","","","","",,,,,"",,,,"SOTT1Clinical.HospitalName",0,1,"",""
+"SOTT1Clinical","SOTT1Clinical.DateOfAdmission","SOTT1Clinical.DateOfAdmission","","","",0,1,"","","","date {[]} {[]}
+","Date of admission","Date of admission","","","","","","","","","",,,,,"",,,,"SOTT1Clinical.DateOfAdmission",0,1,"",""
+"SOTT1Clinical","SOTT1Clinical.HospitalRecordNumber","SOTT1Clinical.HospitalRecordNumber","","","",0,1,"","","","id {[]} {[]}
+","Hospital record number","Hospital record number","","","","","","","","","",,,,,"",,,,"SOTT1Clinical.HospitalRecordNumber",0,1,"",""
+"SOTT1Clinical","SOTT1Clinical.PrimaryCauseOf","SOTT1Clinical.PrimaryCauseOf","","","",0,1,"","","","string {[]} {[]}
+","Primary cause of death","Primary cause of death","","","","","","","","","",,,,,"",,,,"SOTT1Clinical.PrimaryCauseOf",0,1,"",""
+"SOTT1Clinical","SOTT1Clinical.IntentedBirthPlacce","SOTT1Clinical.IntentedBirthPlacce","","","",0,1,"","","","string {[]} {[]}
+","Place where birth will likely take placed","Place where birth will likely take placed","","","","","","","","","",,,,,"",,,,"SOTT1Clinical.IntentedBirthPlacce",0,1,"",""
+"SOTT1Clinical","SOTT1Clinical.Comments","SOTT1Clinical.Comments","","","",0,1,"","","","string {[]} {[]}
+","Comments","Comments","","","","","","","","","",,,,,"",,,,"SOTT1Clinical.Comments",0,1,"",""
+"SOTMeaslesClassification","SOTMeaslesClassification","SOTMeaslesClassification","","","",0,*,"","","","null {[]} {[]}
+","Surveillance & Outbreak Toolkit Measles- Classification","Base definition for all elements that are defined inside a resource - but not those in a data type.","","","","","","","","","",,,,,"",,,,"BackboneElement",0,*,"ele-1
+",""
+"SOTMeaslesClassification","SOTMeaslesClassification.id","SOTMeaslesClassification.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"SOTMeaslesClassification","SOTMeaslesClassification.extension","SOTMeaslesClassification.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"SOTMeaslesClassification","SOTMeaslesClassification.modifierExtension","SOTMeaslesClassification.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"SOTMeaslesClassification","SOTMeaslesClassification.FinalClassification","SOTMeaslesClassification.FinalClassification","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Final Case Classification","Final Case Classification","","","","","","","","","",,,,,"",,,,"SOTMeaslesClassification.FinalClassification",0,1,"",""
+"SOTMeaslesClassification","SOTMeaslesClassification.Source","SOTMeaslesClassification.Source","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Source","Source","","","","","","","","","",,,,,"",,,,"SOTMeaslesClassification.Source",0,1,"",""
+"SOTT1Conclusion","SOTT1Conclusion","SOTT1Conclusion","","","",0,*,"","","","null {[]} {[]}
+","Surveillance & Outbreak Toolkit T1  Conclusion","Base definition for all elements that are defined inside a resource - but not those in a data type.","","","","","","","","","",,,,,"",,,,"BackboneElement",0,*,"ele-1
+",""
+"SOTT1Conclusion","SOTT1Conclusion.id","SOTT1Conclusion.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"SOTT1Conclusion","SOTT1Conclusion.extension","SOTT1Conclusion.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"SOTT1Conclusion","SOTT1Conclusion.modifierExtension","SOTT1Conclusion.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"SOTT1Conclusion","SOTT1Conclusion.FinalClassification","SOTT1Conclusion.FinalClassification","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Final Case Classification","Final Case Classification","","","","","","","","","",,,,,"",,,,"SOTT1Conclusion.FinalClassification",0,1,"",""
+"SOTT1Conclusion","SOTT1Conclusion.Source","SOTT1Conclusion.Source","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Source","Source","","","","","","","","","",,,,,"",,,,"SOTT1Conclusion.Source",0,1,"",""

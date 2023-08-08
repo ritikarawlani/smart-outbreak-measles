@@ -1,0 +1,39 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "localizationOfSkinDisorderCs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://ritikarawlani.github.io/smart-outbreak-measles/localizationOfSkinDisorder</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">Systemic<a name=\"localizationOfSkinDisorderCs-Systemic\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Localized<a name=\"localizationOfSkinDisorderCs-Localized\"> </a></td></tr></table></div>"
+  },
+  "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/localizationOfSkinDisorder",
+  "version" : "0.2.1",
+  "name" : "localizationOfSkinDisorderCs",
+  "title" : "Localization of Skin Disorder",
+  "status" : "active",
+  "date" : "2023-06-01T06:22:02+00:00",
+  "publisher" : "WHO",
+  "contact" : [{
+    "name" : "WHO",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://who.int"
+    }]
+  }],
+  "description" : "Localization of Skin Disorder",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "Systemic",
+    "display" : "Systemic"
+  },
+  {
+    "code" : "Localized",
+    "display" : "Localized"
+  }]
+}

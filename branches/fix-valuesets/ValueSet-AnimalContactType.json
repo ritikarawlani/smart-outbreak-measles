@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "AnimalContactType",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-AnimalContactTypeCs.html\"><code>http://ritikarawlani.github.io/smart-outbreak-measles/AnimalContactType</code></a></li></ul></div>"
+  },
+  "url" : "http://ritikarawlani.github.io/smart-outbreak-measles/ValueSet/AnimalContactType",
+  "version" : "0.2.1",
+  "name" : "AnimalContactType",
+  "title" : "Animal Contact Type",
+  "status" : "draft",
+  "date" : "2023-06-26T09:02:14+00:00",
+  "publisher" : "WHO",
+  "contact" : [{
+    "name" : "WHO",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://who.int"
+    }]
+  }],
+  "description" : "Animal Contact Type",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://ritikarawlani.github.io/smart-outbreak-measles/AnimalContactType"
+    }]
+  }
+}
